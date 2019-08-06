@@ -1,0 +1,132 @@
+.primary-nav {
+
+  &--pull-right {
+
+    float: none;
+
+    @mixin atMedium {
+      float: right;
+
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    @mixin clearfix;
+  }
+
+
+
+  li {
+    list-style: none;
+    display: block;
+    padding-left: 10px;
+    padding-top: 0;
+    text-align: center;
+
+    @mixin atMedium {
+      padding-top: 5px;
+      padding-left: 20px;
+      float: left;
+      text-align: left;
+
+    }
+
+  }
+
+  li:last-child {
+    padding-bottom: 20px;
+
+    @mixin atMedium {
+      padding-bottom: 0;
+
+    }
+
+  }
+
+  a {
+    color: #FFF;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 2px 0;
+    background-color: #414980;
+    max-width: 270px;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 24px;
+
+@mixin clearfix;
+
+    @mixin atMedium {
+      background-color: transparent;
+      margin-bottom: 0;
+      font-size: 14px;
+
+    }
+  }
+
+  span {
+   display: inline-block;
+    margin-right: -4px;
+
+    @mixin atMedium {
+      margin-right: 4px;
+    }
+  }
+
+  .icon {
+
+    transform: scale(0.7);
+    transform-origin: 0 100%;
+    @mixin atMedium {
+      transform: scale(1.1);
+      transform-origin: 0 0;
+    }
+  }
+
+}
+
+
+
+:lang(th) .primary-nav ul li:first-child {
+  display: none;
+}
+
+:lang(th) .contact-an-advisor__contact-number {
+  display: none;
+}
+
+
+:lang(tr) .contact-an-advisor__contact-number {
+  display: none;
+}
+
+:lang(tr) .primary-nav ul li:first-child {
+  display: none;
+}
+
+
+:lang(cn) .primary-nav ul li:first-child {
+  display: none;
+}
+
+:lang(cn) .contact-an-advisor__contact-number {
+  display: none;
+
+}
+
+
+
+:lang(tw) .primary-nav ul li:first-child {
+  display: none;
+}
+
+:lang(tw) .contact-an-advisor__contact-number {
+  display: none;
+
+}

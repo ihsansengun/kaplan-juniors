@@ -1,0 +1,85 @@
+{
+  "html": {
+    "lang" : "en",
+    "meta-description": "BEAT THE CLOCK AND BOOK YOUR PLACE BY SEPTEMBER 30th, 2017",
+    "title": "Thinking of learning English next year?",
+    "tealium-tag" : "kie-english"
+  },
+
+  "facebook": {
+    "title": "Thinking of learning English next year?",
+    "description" : "BEAT THE CLOCK AND BOOK YOUR PLACE BY SEPTEMBER 30th, 2017",
+    "url" : "https://study.kaplaninternational.com/en/036_plan-for-2018-and-save/",
+    "image" : "http://study.kaplaninternational.com/_assets/036_plan-for-2018-and-save/images/facebook.jpg"
+  },
+
+  "menu": {
+    "tel" : "1-888-744-3046",
+    "tel-link" : "18887443046",
+    "contact" : "CONTACT US"
+  },
+
+
+
+  "footer" : {
+    "copy1" : "About Kaplan",
+    "copy2" : "With 45+ accredited schools for adults and young learners across 8 English-speaking countries, Kaplan International English offers world-class English language education and the experience of a lifetime. ",
+    "copy3" : "We offer a range of courses for students aged 12 and up, and have done so for more than 40 years. Last year, more than 70,000 students traveled and studied with us, and 9 of 10 would recommend us to friends and family.",
+    "copy4" : "Learn more ",
+
+    "links" :  {
+      "copy0" : "Links",
+
+      "copy1": "Careers",
+      "copy2": "//careers.kaplaninternational.com/jobs/",
+
+      "copy3": "Contact Details",
+      "copy4": "//kaplaninternational.com/contact-us-corporate-enquiries-and-call-us",
+
+      "copy5": "English Test",
+      "copy6": "//kaplaninternational.com/free-english-test",
+
+      "copy7": "Terms & Conditions",
+      "copy8": "//kaplaninternational.com/privacy",
+
+      "copy9": "Cookie Policy",
+      "copy10": "//kaplaninternational.com/privacy#s5",
+
+      "copy11": "Sitemap",
+      "copy12" : "//kaplaninternational.com/"
+    },
+
+    "follow-us": {
+      "copy1" : "Follow us",
+
+      "copy2" : "Facebook",
+      "copy3" : "//facebook.com/KIEGlobal",
+
+      "copy4" : "Twitter",
+      "copy5" : "//twitter.com/kaplanintl",
+
+      "copy6" : "Instagram",
+      "copy7" : "//instagram.com/kaplaninternational",
+
+      "copy8" : "Kaplan Blog",
+      "copy9" : "//kaplaninternational.com/blog/"
+
+    },
+
+    "accreditation" : {
+      "copy1" : "Worldwide accreditations",
+      "copy2" : "USA",
+      "copy3" : "UK",
+      "copy4" : "Australia",
+      "copy5" : "Canada",
+      "copy6" : "New Zealand",
+      "copy7" : "Ireland"
+
+    }
+
+  }
+
+}
+
+
+
