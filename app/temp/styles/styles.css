@@ -1896,10 +1896,12 @@ label {
   background: url("../../assets/images/jr-hub--bottom-bg-lg.jpg");
   background-size: cover;
   padding: 40px 15px;
+
 }
 @media (min-width: 890px) {
 .experiences {
     padding: 80px 15px
+
 }
   }
 .experiences__inner {
@@ -2018,3 +2020,45 @@ label {
         font-size: 30px;
         color: white;
       }
+.experiences__modal-content {
+    width: 100%;
+    text-align: center;
+
+  }
+.experiences__modal-content h5 {
+      font-size: 16px;
+      color: #202020;
+      margin-top: 10px;
+      text-align: center;
+    }
+.experiences__modal-content p {
+
+      font-size: 14px;
+      text-align: center;
+      color: #202020;
+      margin-top: 10px;
+
+    }
+.experiences__modal-content img {
+      display: block;
+      width: 100%;
+      max-width: 137px;
+      margin: 0 auto;
+
+    }
+.experiences .modal {
+    text-align: center;
+    padding: 0!important;
+  }
+.experiences .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+.experiences .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }

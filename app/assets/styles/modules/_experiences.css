@@ -102,4 +102,55 @@
       }
     }
   }
+
+  &__modal-content {
+    width: 100%;
+    text-align: center;
+
+    h5 {
+      font-size: 16px;
+      color: #202020;
+      margin-top: 10px;
+      text-align: center;
+    }
+    p {
+
+      font-size: 14px;
+      text-align: center;
+      color: #202020;
+      margin-top: 10px;
+
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 137px;
+      margin: 0 auto;
+
+    }
+
+  }
+
+
+  .modal {
+    text-align: center;
+    padding: 0!important;
+  }
+
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
 }
+

@@ -12,4 +12,3 @@ new SmoothScroll();
 
 // var jqueryCycle = new JqueryCycle($('#testimonial'));
 
-
