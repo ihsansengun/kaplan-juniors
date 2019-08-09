@@ -1,6 +1,6 @@
 
 
-var projectName = "project-name";
+var projectName = "kaplan-juniors";
 var lang = "en";
 
 

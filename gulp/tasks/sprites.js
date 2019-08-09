@@ -16,12 +16,14 @@ var config = {
         replaceSvgWithPng: function () {
           return function (sprite, render) {
               return render(sprite).split('.svg').join('.png');
-          }          
+          }
         }
       },
       sprite: 'sprite.svg',
+      bust: false,
       render: {
         css: {
+
           template: './gulp/templates/sprite.css'
         }
       }

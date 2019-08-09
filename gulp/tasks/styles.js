@@ -8,7 +8,6 @@ mixins = require('postcss-mixins'),
 hexrgba = require('postcss-hexrgba');
 lostgrid = require('lost'),
 pixelstorem = require('postcss-pixels-to-rem'),
-fontawesome = require('postcss-font-awesome');
  rtl= require('rtlcss');
 
 

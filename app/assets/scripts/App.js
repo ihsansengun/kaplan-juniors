@@ -7,10 +7,8 @@ import SmoothScroll from './modules/SmoothScroll';
 
 var mobileMenu = new MobileMenu();
 
-
 new RevealOnScroll($('.element'), '65%');
 new SmoothScroll();
-
 
 // var jqueryCycle = new JqueryCycle($('#testimonial'));
 

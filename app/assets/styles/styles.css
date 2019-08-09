@@ -11,8 +11,11 @@
 @import "modules/_btn.pcss";
 @import "modules/_icons.pcss";
 @import "base/_footer.pcss";
-@import "base/_header.pcss";
 @import "base/_primary-nav.pcss";
 @import "modules/_reveal-item.pcss";
 @import "modules/_form.pcss";
-
+@import "modules/_hero-banner.css";
+@import "modules/_menu.css";
+@import "modules/_description-area.css";
+@import "modules/_choose-your-program.css";
+@import "modules/_experiences.css";
