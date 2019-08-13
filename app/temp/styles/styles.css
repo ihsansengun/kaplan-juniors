@@ -2443,7 +2443,8 @@ label {
 .why-choose__item span {
         text-align: center;
         float: none;
-        padding-top: 0
+        padding-top: 0;
+        padding-left: 0
 
     }
   }
@@ -2475,7 +2476,8 @@ label {
 @media (min-width: 890px) {
 .why-choose__icon-wrapper {
       margin: 0 auto;
-      float: none
+      float: none;
+      max-width: none
 
   }
   }
