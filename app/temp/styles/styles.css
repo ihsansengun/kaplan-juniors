@@ -2442,7 +2442,8 @@ label {
 @media (min-width: 890px) {
 .why-choose__item span {
         text-align: center;
-        float: none
+        float: none;
+        padding-top: 0
 
     }
   }
