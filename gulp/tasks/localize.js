@@ -1,6 +1,6 @@
 
-var projectName = "kaplan-juniors";
-var lang = "tr";
+var projectName = "summer-camp";
+var lang = "en";
 
 
 var gulp = require('gulp'),
@@ -10,7 +10,7 @@ i18n = require('gulp-i18n-localize');
 gulp.task('localize', function () {
     return gulp.src('elandww/master/index.html')
         .pipe(i18n({
-            locales: ['tr'],
+            locales: ['en'],
             localeDir: 'gulp/locales'
         }))
         .pipe(gulp.dest('elandww/transilation'));

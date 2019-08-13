@@ -1,5 +1,5 @@
 @define-mixin atSmaller {
-  @media (max-width: 529px) {
+  @media (max-width: 370px) {
     @mixin-content;
   }
 }
@@ -57,7 +57,12 @@
 
 @define-mixin centeredY {
   position: absolute;
-  left: 50%;
+  top: 50%;
   transform: translateY(-50%);
+}
 
+@define-mixin centeredX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

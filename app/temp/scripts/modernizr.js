@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.7.1
- * Build https://modernizr.com/download?-flexbox-svg-setclasses-dontmin
+ * Build https://modernizr.com/download?-flexbox-svg-time-setclasses-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -229,6 +229,31 @@
   }
 
   ;
+/*!
+{
+  "name": "SVG",
+  "property": "svg",
+  "caniuse": "svg",
+  "tags": ["svg"],
+  "authors": ["Erik Dahlstrom"],
+  "polyfills": [
+    "svgweb",
+    "raphael",
+    "amplesdk",
+    "canvg",
+    "svg-boilerplate",
+    "sie",
+    "dojogfx",
+    "fabricjs"
+  ]
+}
+!*/
+/* DOC
+Detects support for SVG in `<embed>` or `<object>` elements.
+*/
+
+  Modernizr.addTest('svg', !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect);
+
 
   /**
    * If the browsers follow the spec, then they would expose vendor-specific styles as:
@@ -806,28 +831,18 @@ Detects support for the Flexible Box Layout model, a.k.a. Flexbox, which allows 
 
 /*!
 {
-  "name": "SVG",
-  "property": "svg",
-  "caniuse": "svg",
-  "tags": ["svg"],
-  "authors": ["Erik Dahlstrom"],
-  "polyfills": [
-    "svgweb",
-    "raphael",
-    "amplesdk",
-    "canvg",
-    "svg-boilerplate",
-    "sie",
-    "dojogfx",
-    "fabricjs"
-  ]
+  "name": "time Element",
+  "property": "time",
+  "tags": ["elem"],
+  "builderAliases": ["elem_time"],
+  "notes": [{
+    "name": "WHATWG Spec",
+    "href": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element"
+  }]
 }
 !*/
-/* DOC
-Detects support for SVG in `<embed>` or `<object>` elements.
-*/
 
-  Modernizr.addTest('svg', !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect);
+  Modernizr.addTest('time', 'valueAsDate' in createElement('time'));
 
 
   // Run each test

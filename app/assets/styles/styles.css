@@ -14,8 +14,11 @@
 @import "base/_primary-nav.pcss";
 @import "modules/_reveal-item.pcss";
 @import "modules/_form.pcss";
-@import "modules/_hero-banner.css";
-@import "modules/_menu.css";
-@import "modules/_description-area.css";
-@import "modules/_choose-your-program.css";
-@import "modules/_experiences.css";
+@import "modules/_hero-banner.pcss";
+@import "modules/_menu.pcss";
+@import "modules/_description-area.pcss";
+@import "modules/_choose-your-program.pcss";
+@import "modules/_experiences.pcss";
+@import "modules/_why-choose.pcss";
+@import "modules/_schedule.pcss";
+@import "modules/_testimonials.pcss";

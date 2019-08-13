@@ -3,18 +3,18 @@ Instead edit gulp/templates/sprite */
 
 {{#shapes}}
 {{#first}}
-.icon {
+._icon {
   background-image: url('../../assets/images/sprites/{{{sprite}}}')/*rtl:ignore*/;
 }
 
-.no-svg .icon {
+.no-svg ._icon {
   background-image: url('../../assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}')/*rtl:ignore*/;
 
 }
 
 {{/first}}
 
-.icon--{{base}} {
+._icon--{{base}} {
   width: {{width.outer}}px;
   height: {{height.outer}}px;
   background-position: {{position.relative.xy}}/*rtl:ignore*/;

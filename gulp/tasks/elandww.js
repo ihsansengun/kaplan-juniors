@@ -1,6 +1,6 @@
 
 
-var projectName = "kaplan-juniors";
+var projectName = "summer-camp";
 var lang = "en";
 
 
@@ -41,13 +41,13 @@ gulp.task('clean', function() {
 
 
 gulp.task('copyAssets', ['clean'],  function() {
-    return gulp.src('./dist/assets/**/*')
+    return gulp.src('./docs/assets/**/*')
         .pipe(gulp.dest('./elandww/_assets/' + projectName));
 });
 
 
 gulp.task('copyHtml', ['clean'],  function() {
-    return gulp.src('./dist/index.html')
+    return gulp.src('./docs/index.html')
         .pipe(gulp.dest('./elandww/'+ lang +'/'+ projectName));
 });
 
