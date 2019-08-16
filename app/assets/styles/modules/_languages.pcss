@@ -1,0 +1,126 @@
+.languages {
+  lost-utility: clearfix;
+  text-align: center;
+  clear: both;
+  border-bottom: 1px solid #d2cfcf;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+
+  &__english {
+    position: relative;
+    lost-column: 1/1;
+    clear: both;
+    margin-bottom: 20px;
+
+    background: url("../../assets/images/lang-eng-bg.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    color: white;
+    margin-bottom: 20px;
+
+    @mixin atMedium {
+      lost-column: 1/1;
+      min-height: 290px;
+    }
+  }
+  &__french {
+    position: relative;
+    lost-column: 1/1;
+
+    padding: 20px;
+    background: url("../../assets/images/lang-fr-bg.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    margin-bottom: 20px;
+
+    p {
+      display: none;
+    }
+
+    @mixin atMedium {
+      lost-column: 1/3 0;
+      min-height: 290px;
+    }
+  }
+
+  &__german {
+    position: relative;
+
+    lost-column: 1/1;
+    padding: 20px;
+
+    background: url("../../assets/images/lang-gr-bg.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    margin-bottom: 20px;
+
+    p {
+      display: none;
+    }
+    @mixin atMedium {
+      lost-column: 1/3 0;
+      min-height: 290px;
+    }
+  }
+
+  &__spanish {
+    position: relative;
+    lost-column: 1/1;
+    padding: 20px;
+
+    background: url("../../assets/images/lang-sp-bg.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    margin-bottom: 20px;
+
+    p {
+      display: none;
+    }
+    @mixin atMedium {
+      lost-column: 1/3 0;
+      min-height: 290px;
+    }
+  }
+
+  &__inner {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @mixin atMedium {
+      top: auto;
+      transform: none;
+      left: 0;
+      padding: 0 20px;
+      bottom: 20px;
+    }
+
+    h2 {
+      color: white;
+    }
+    h4 {
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-size: 30px;
+
+      @mixin atMedium {
+        font-size: 24px;
+
+        display: block;
+        margin-bottom: 25px;
+
+      }
+
+    }
+    p {
+      font-size: 16px;
+      display: none;
+      @mixin atMedium {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 
 
-var projectName = "summer-camp";
+var projectName = "language-hub";
 var lang = "en";
 
 
