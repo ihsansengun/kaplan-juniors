@@ -10,7 +10,6 @@
 @import "modules/_equal-height.pcss";
 @import "modules/_btn.pcss";
 @import "modules/_icons.pcss";
-@import "base/_footer.pcss";
 @import "base/_primary-nav.pcss";
 @import "modules/_reveal-item.pcss";
 @import "modules/_form.pcss";
@@ -26,4 +25,5 @@
 @import "modules/_get-in-touch.pcss";
 @import "modules/_what-will-learn.pcss";
 @import "modules/_course-box.pcss";
+
 
