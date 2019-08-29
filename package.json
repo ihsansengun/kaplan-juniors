@@ -65,5 +65,11 @@
     "normalize.css": "^7.0.0",
     "picturefill": "^3.0.2",
     "waypoints": "^4.0.1"
-  }
+  },
+  "browserslist": [
+    "last 3 versions",
+    ">1%",
+    "Firefox >= 20",
+    "iOS >=7"
+  ]
 }

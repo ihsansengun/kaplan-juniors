@@ -1,6 +1,6 @@
 
 
-var projectName = "language-hub";
+var projectName = "programs-for-juniors";
 var lang = "en";
 
 
@@ -26,16 +26,16 @@ gulp.task('previewElandww', function() {
 
 gulp.task('clean', function() {
 
-    const pathsToDel = [
-        './elandww/**/*',
+    /*const pathsToDel = [
+        './elandww/!**!/!*',
         '!./elandww/master',
-        '!./elandww/master/**',
+        '!./elandww/master/!**',
         '!./elandww/transilation',
-        '!./elandww/transilation/**',
+        '!./elandww/transilation/!**',
 
 
     ];
-    return del(pathsToDel);
+    return del(pathsToDel);*/
 });
 
 

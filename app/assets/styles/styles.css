@@ -23,6 +23,7 @@
 @import "modules/_schedule.pcss";
 @import "modules/_testimonials.pcss";
 @import "modules/_languages.pcss";
-@import "modules/_get-in-touch.pcss"
-
+@import "modules/_get-in-touch.pcss";
+@import "modules/_what-will-learn.pcss";
+@import "modules/_course-box.pcss";
 

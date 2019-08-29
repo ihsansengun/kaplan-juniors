@@ -2,9 +2,10 @@
   position: relative;
   width: 100%;
   clear: both;
-  background: url("../../assets/images/why-choose-bg.jpg") no-repeat center;
+  background: url("https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/why-choose-bg.jpg") no-repeat center;
   background-size: cover;
   padding-bottom: 0;
+
   &__inner {
     position: relative;
 
@@ -21,7 +22,7 @@
       margin-top: 10px;
 
       @mixin atMedium {
-        font-size: 36px;
+        font-size: 32px;
       }
     }
   }
@@ -38,15 +39,11 @@
     lost-column: 1/1;
 
     border-bottom: 1px solid #FFFFFF;
-    padding-bottom: 10px;
-    padding-top: 10px;
 
 
     @mixin atMedium {
       lost-column: 1/4;
       border-bottom: none;
-      padding-bottom: inherit;
-      padding-top: inherit;
     }
 
     span {
@@ -56,7 +53,6 @@
       text-align: left;
       display: block;
       float: left;
-      padding-left: 20px;
       padding-top: 30px;
 
       @mixin atMedium {
@@ -69,20 +65,20 @@
 
       @mixin atSmaller {
         max-width: 190px;
-
       }
 
     }
 
-
     ._icon {
       display: block;
-      transform: scale(0.9);
+      transform: scale(0.6);
       margin: 0;
       float: left;
       @mixin atMedium {
         margin: 0 auto;
         float: none;
+        transform: scale(0.9);
+
       }
     }
   }
@@ -129,6 +125,7 @@
     }
   }
 
+
   &__monday-to-friday {
     width: 100%;
     float: left;
@@ -153,7 +150,7 @@
       top: 0;
       left: calc(50% - 1px);
       right: auto;
-      z-index: 0;
+      z-index: 1;
     }
 
     p.desc {
