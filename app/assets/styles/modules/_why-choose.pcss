@@ -13,8 +13,19 @@
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 15px;
+    padding: 5% 15px 0;
     z-index: 10;
+
+    &:before,
+    &:after {
+      display: table;
+      content: "";
+      clear: both;
+    }
+
+    > * {
+      float: none;
+    }
 
     h1 {
       font-size: 24px;
@@ -28,17 +39,41 @@
   }
 
   &__items {
+    list-style: none;
     float: left;
     width: 100%;
-    margin: 40px 0 0;
-    padding: 0;
-    list-style: none;
+    margin: 0;
+    padding: 0 !important;
+
+    @mixin atMedium {
+      padding: 2em 0 5em !important;
+    }
+    @mixin atLarge {
+      padding: 2em 0 5em !important;
+    }
   }
 
   &__item {
     lost-column: 1/1;
 
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    &:before {
+      content: "" !important;
+    }
+
+    a.anchor-schedule {
+      text-decoration: none;
+      display: block;
+
+       @mixin atMedium {
+        padding: 15px 0;
+        border-radius: 15px;
+        &:hover {
+          background-color: rgba(0, 164, 217, 0.5);
+        }
+       }
+    }
 
 
     @mixin atMedium {
@@ -48,7 +83,7 @@
 
     span {
       color: white;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: bold;
       text-align: left;
       display: block;
@@ -58,13 +93,14 @@
       @mixin atMedium {
         text-align: center;
         float: none;
-        padding-top: 0;
+        padding-top: 12px;
         padding-left: 0;
 
       }
 
       @mixin atSmaller {
-        max-width: 190px;
+        width: calc(100% - 92px);
+        /* max-width: 190px; */
       }
 
     }
@@ -104,23 +140,27 @@
     margin-bottom: 50px;
 
     h2 {
-      font-size: 16px;
+      font-size: 18px;
       color: white;
       font-weight: bold;
+      margin-bottom: 1em;
 
       @mixin atMedium {
         font-size: 24px;
       }
+      @mixin atLarge {
+        font-size: 28px;
+      }
     }
     p {
-      font-size: 16px;
+      font-size: 14px;
       color: white;
       font-weight: bold;
       max-width: 560px;
       margin: 0 auto;
 
       @mixin atMedium {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
   }
@@ -140,8 +180,15 @@
   &__timeline-wrapper {
     position: relative;
     width: 100%;
-    min-height: 40px;
     float: left;
+    min-height: 60px;
+    @mixin atSmaller {
+      padding-top: 60px;
+    }
+    @mixin atMedium {
+      min-height: 80px;
+    }
+
     &:before {
       content: "";
       position: absolute;

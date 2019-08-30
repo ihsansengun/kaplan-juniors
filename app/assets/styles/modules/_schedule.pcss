@@ -41,8 +41,8 @@
     min-height: 70px;
     z-index: 1;
     background-color: #f0f0f0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     @mixin atMedium {
       display: block;
       lost-column: 1/2;
@@ -67,14 +67,17 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    padding: 30px 0;
+    margin: 15px 0;
     float: left;
-    min-height: 301px;
     z-index: 1;
+    border-radius: 15px;
+
+    
 
     @mixin atMedium {
       flex-direction: unset;
       padding: 60px 10px;
+      min-height: 300px;
     }
 
     &:nth-of-type(even) .schedule__col-1-2:nth-of-type(even) {
@@ -91,9 +94,9 @@
       }
     }
 
-    &:first-child {
+    /* &:first-child {
       padding: 60px 10px 0;
-    }
+    } */
 
     &:nth-child(odd) .schedule__img-wrapper {
       float: none;
@@ -155,6 +158,11 @@
     width: 100%;
     max-width: none;
 
+    @mixin atSmaller {
+      max-height: 136px;
+      overflow: hidden;
+    }
+
     @mixin atMedium {
       max-width: 460px;
     }
@@ -162,10 +170,15 @@
     img {
       display: block;
       width: 100%;
-      border-radius: 0;
+      -webkit-border-top-left-radius: 15px;
+      -webkit-border-top-right-radius: 15px;
+      -moz-border-radius-topleft: 15px;
+      -moz-border-radius-topright: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
 
       @mixin atMedium {
-        border-radius: 10px;
+        border-radius: 15px;
       }
     }
   }
@@ -184,14 +197,17 @@
 
     p {
       display: block;
-      font-size: 16px;
       color: #202020;
       width: 100%;
       float: left;
-      margin-top: -10px;
+      clear: both;
+      margin-top: -16px;
+      padding: 0 6px;
+      font-size: 13px;
 
       @mixin atMedium {
         margin: 0 auto;
+        font-size: 16px;
       }
     }
     .clock {
@@ -232,12 +248,15 @@
 
     .event {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       color: #202020;
       font-weight: bold;
       line-height: 22px;
 
       @mixin atMedium {
+        font-size: 20px;
+      }
+      @mixin atLarge {
         font-size: 24px;
       }
     }
