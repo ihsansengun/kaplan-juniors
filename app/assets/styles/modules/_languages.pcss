@@ -2,9 +2,24 @@
   lost-utility: clearfix;
   text-align: center;
   clear: both;
-  border-bottom: 1px solid #d2cfcf;
   padding-bottom: 60px;
   margin-bottom: 30px;
+
+  > div {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: -moz-linear-gradient(top,  rgba(39,91,196,0) 10%, rgba(11,13,20,0.5) 100%);
+      background: -webkit-linear-gradient(top,  rgba(39,91,196,0) 10%,rgba(11,13,20,0.5) 100%);
+      background: linear-gradient(to bottom,  rgba(39,91,196,0) 10%,rgba(11,13,20,0.5) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00275bc4', endColorstr='#800b0d14',GradientType=0 );
+    }
+  }
 
   &__english {
     position: relative;
@@ -21,6 +36,11 @@
     @mixin atMedium {
       lost-column: 1/1;
       min-height: 290px;
+      margin-bottom: 30px;
+    }
+
+    @mixin atLarge {
+      min-height: 356px;
     }
   }
   &__french {
@@ -40,6 +60,10 @@
     @mixin atMedium {
       lost-column: 1/3 0;
       min-height: 290px;
+    }
+
+    @mixin atLarge {
+      min-height: 356px;
     }
   }
 
@@ -61,6 +85,10 @@
       lost-column: 1/3 0;
       min-height: 290px;
     }
+
+    @mixin atLarge {
+      min-height: 356px;
+    }
   }
 
   &__spanish {
@@ -80,6 +108,10 @@
       lost-column: 1/3 0;
       min-height: 290px;
     }
+
+    @mixin atLarge {
+      min-height: 356px;
+    }
   }
 
   &__inner {
@@ -95,6 +127,18 @@
       left: 0;
       padding: 0 20px;
       bottom: 20px;
+
+      > * {
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+    }
+    @mixin atLarge {
+      top: 42%;
+      bottom: auto;
+      height: 50%;
     }
 
     h2 {
@@ -104,14 +148,18 @@
       color: white;
       text-transform: uppercase;
       margin-bottom: 0;
-      font-size: 30px;
+      font-size: 24px;
 
       @mixin atMedium {
-        font-size: 24px;
+        font-size: 26px;
 
         display: block;
         margin-bottom: 25px;
 
+      }
+
+      @mixin atLarge {
+        font-size: 28px;
       }
 
     }

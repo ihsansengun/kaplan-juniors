@@ -35,11 +35,16 @@
   }
 
   &__item {
+    position: relative;
     lost-column: 1/1;
     text-align: center;
     background: #d6073b;
-    padding: 5px 0 30px 0;
+    padding: 5px 0 100px 0;
     margin-bottom: 20px;
+
+    &:before {
+      content: none !important;
+    }
 
     @mixin atMedium {
       lost-column: 1/2;
@@ -74,6 +79,19 @@
       max-width: 100%;
       height: auto;
       float: left;
+    }
+
+
+    a {
+      &._btn {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        width: calc(100% - 30px);
+        margin: 0;
+        max-width: none;
+       
+      }
     }
   }
 }

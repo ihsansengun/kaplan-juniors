@@ -7,6 +7,20 @@
   &__inner {
     width: 100%;
     position: relative;
+
+    picture:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: -moz-radial-gradient(center, ellipse cover,  rgba(32,32,32,0.25) 0%, rgba(32,32,32,0) 75%, rgba(32,32,32,0) 100%);
+      background: -webkit-radial-gradient(center, ellipse cover,  rgba(32,32,32,0.25) 0%,rgba(32,32,32,0) 75%,rgba(32,32,32,0) 100%);
+      background: radial-gradient(ellipse at center,  rgba(32,32,32,0.25) 0%,rgba(32,32,32,0) 75%,rgba(32,32,32,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66202020', endColorstr='#00202020',GradientType=1 );
+    }
   }
 
   img {
@@ -51,11 +65,11 @@
 
   &__lang-list {
     display: inline-block;
-    padding: 0;
     list-style: none;
     text-align: center;
     border-top: 1px solid #d2cfcf;
-    margin-top: 20px;
+    padding-top: 8px !important;
+    margin-top: 2em !important;
 
     li {
 
@@ -77,15 +91,19 @@
         text-align: center;
       }
 
-     &:after {
-       content: ".";
-       position: absolute;
-       right: -4px;
-       top: -3px;
-       font-size: 20px;
-       font-weight: bold;
+      &:before {
+        content: none !important;
+      }
 
-     }
+      &:after {
+        content: ".";
+        position: absolute;
+        right: -4px;
+        top: -3px;
+        font-size: 20px;
+        font-weight: bold;
+
+      }
 
       &:last-child:after {
         content: none;

@@ -4,4 +4,17 @@
 
   text-align: center;
   padding-bottom: 30px;
+
+  p {
+  	@mixin atLarge {
+  		font-size: 16px;
+  	}
+  }
+
+  a {
+  	&._btn--learn-more {
+  		min-width: 240px;
+  		padding: 16px;
+  	}
+  }
 }
