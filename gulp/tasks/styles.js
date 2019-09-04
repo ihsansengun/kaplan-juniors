@@ -8,6 +8,7 @@ mixins = require('postcss-mixins'),
 hexrgba = require('postcss-hexrgba');
 lostgrid = require('lost'),
 pixelstorem = require('postcss-pixels-to-rem'),
+    flexbugs = require('postcss-flexbugs-fixes'),
  rtl= require('rtlcss');
 
 
@@ -15,7 +16,7 @@ pixelstorem = require('postcss-pixels-to-rem'),
 
 gulp.task('styles', ['form-css'], function() {
   return gulp.src('./app/assets/styles/styles.css')
-    .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba,lostgrid, autoprefixer ()]))
+    .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba,lostgrid, flexbugs(), autoprefixer ()]))
       .on('error', function(errorInfo) {
           console.log(errorInfo.toString());
           this.emit('end');
