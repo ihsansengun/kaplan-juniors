@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]>
+<html class="iem7">
+<![endif]-->
+<!--[if (lte IE 6)&(!IEMobile)]>
+<html class="ie6 ie6-7 ie6-8">
+<![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>
+<html class="ie7 ie6-7 ie6-8">
+<![endif]-->
+<!--[if (IE 8)&(!IEMobile)]>
+<html class="ie8 ie6-8">
+<![endif]-->
+<!--[if (IE 9)&(!IEMobile)]>
+<html class="ie9 ie6-9">
+<![endif]-->
+<!--[if (gte IE 10)|(gt IEMobile 7)]><!-->
+<html xmlns:ng="http://angularjs.org" class="not-ie6-9" lang="ar" 
+	xmlns:fb="http://ogp.me/ns/fb#"
+	xmlns:og="http://ogp.me/ns#"
+	xmlns:article="http://ogp.me/ns/article#"
+	xmlns:book="http://ogp.me/ns/book#"
+	xmlns:profile="http://ogp.me/ns/profile#"
+	xmlns:video="http://ogp.me/ns/video#"
+	xmlns:product="http://ogp.me/ns/product#">
+	<!--<![endif]-->
+	<head profile="http://www.w3.org/1999/xhtml/vocab">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="MobileOptimized" content="width" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta http-equiv="cleartype" content="on" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+		<!--[if IE]><![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<link rel="dns-prefetch" href="//cdn.kaplaninternational.com" />
+		<link rel="dns-prefetch" href="//" />
+		<!--[if IE 9]>
+		<link rel="prefetch" href="//cdn.kaplaninternational.com" />
+		<link rel="prefetch" href="//" />
+		<![endif]-->
+		<link rel="shortcut icon" href="https://cdn.kaplaninternational.com/profiles/base_drupal_build/themes/kis_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+		<link href="/it/corsi-lingue-ragazzi" rel="alternate" hreflang="it" />
+		<link href="/fr/sejour-linguistique-junior" rel="alternate" hreflang="fr" />
+		<link href="/junior-language-courses" rel="alternate" hreflang="en" />
+		<link href="/ar/junior-language-courses" rel="alternate" hreflang="ar" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="/br/cursos-para-juniors-no-exterior" rel="alternate" hreflang="pt" />
+		<link href="//logx.optimizely.com" rel="preconnect" />
+		<link href="//cdn.optimizely.com/js/4238035597.js" rel="preload" as="script" />
+		<meta name="description" content="دورات الإنجليزية والفرنسية والألمانية المصممة خصيصا للطلاب الذين تتراوح أعمارهم بين 8-18 سنة في أوروبا والولايات المتحدة وكندا. تجارب ممتعة لتعلم اللغة." />
+		<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+		<link rel="canonical" href="https://www.kaplaninternational.com/ar/junior-language-courses" />
+		<link rel="shortlink" href="https://cmsadmin-prod-ekapiww.kapintdc.com/ar/node/3067" />
+		<meta property="og:site_name" content="Kaplan International" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://cmsadmin-prod-ekapiww.kapintdc.com/ar/junior-language-courses" />
+		<meta property="og:title" content="دورات لغة في الخارج للصغار" />
+		<title>دورات لغة في الخارج للصغار</title>
+		<link type="text/css" rel="stylesheet" href="https://cdn.kaplaninternational.com/sites/default/files/advagg_css/css__lIBCEQWHqhEhdOOnqS1bV-D3HN2lvky75dN5mFk2puc__nAfoLSRzcreyu5sRk82b1K4PEdqOcqtqbFe3k6oxgzk__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.css" media="all" />
+		<link type="text/css" rel="stylesheet" href="https://cdn.kaplaninternational.com/sites/default/files/advagg_css/css__SnI3T9JMM7fp9pvlZjBTOQlbCZGd4koLRgytfODCr7E__M-FdkCI6ViyU162__gk1EdL_R3z-HqERDKize1xU2hM__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.css" media="all" />
+		<link type="text/css" rel="stylesheet" href="https://cdn.kaplaninternational.com/sites/default/files/advagg_css/css__JXdi3MrYEWtQDKWGiKwh-sCMzCq9tKC-aR-wR-nNXOU__qjj4sD9ZsN36UyjGgVofoGKzYkx9x9mce0kkjD6_7sE__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.css" media="all" />
+		<link type="text/css" rel="stylesheet" href="https://cdn.kaplaninternational.com/sites/default/files/advagg_css/css__EOBhJVHJ_BkvvpsLrt7F5PEoMtxAf3dIvuZL1PDXF_U__OKW6wzK7lSC6XUekovq4mRgG3QZU1JxbZCDPn_NBrlU__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.css" media="all" />
+		<link type="text/css" rel="stylesheet" href="https://cdn.kaplaninternational.com/sites/default/files/advagg_css/css__p9QKS2wDuNb23BmFfLJMF_-_oijYwKWYU3m8HIkXFWo__JYRDfmKUXIv0DDEOvKvzolh_8zC64R6AeuNphJfyimI__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.css" media="all" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lte IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script>
+			// For Angular IE8 compatibility
+			document.createElement('google-map');
+			document.createElement('marker-label');
+			document.createElement('info-window');
+			document.createElement('modal');
+			document.createElement('accordion');
+			document.createElement('accordion-group');
+			document.createElement('accordion-heading');
+		</script>
+		<![endif]-->
+		<link rel="apple-touch-icon" href="/profiles/base_drupal_build/themes/kis_theme/images/apple-touch-icon.png">
+		<script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.optimizely.com/js/4238035597.js"></script>
+		<script type="text/javascript">
+			var utag_data = {};
+		</script><script>
+			var utagUrl = "//tags.tiqcdn.com/utag/kaplan2/kie-arabic/prod/utag.js";
+		</script>
+		<script type="text/javascript">
+			(function(a,b,c,d){
+			a = utagUrl;
+			b = document;
+			c = "script";
+			d = b.createElement(c);
+			d.src = a;
+			d.type = "text/java" + c;
+			d.async = true;
+			a = b.getElementsByTagName(c)[0];
+			a.parentNode.insertBefore(d, a);
+			})();
+		</script>  
+	</head>
+	<body dir="rtl" class="html not-front logged-in no-sidebars page-node page-node- page-node-3067 node-type-hub adminimal-menu adminimal-frontend menu-render-collapsed environment-prod i18n-ar language-ar language-dir-rtl sticky-toolbar sticky-nav no-course-finder"  ng-app="kaplan" id="ng-app">
+		<div class="wrapper" id="wrapper">
+			<div id="skip-link">
+				<a href="#main-content" class="element-invisible element-focusable">تجاوز الى المحتوى الرئيسي</a>
+			</div>
+			<header class="header clearfix no-cf page">
+				<!-- TOP BAR : Featured CTAs -->
+				<div class="header-top header-featured">
+					<div class="header-top-logo">
+						<a href="/ar" title="الرئيسية">
+						<img class="kielogo img-responsive" src="https://cdn.kaplaninternational.com/profiles/base_drupal_build/themes/kis_theme/logo.png?v2" alt="الرئيسية">
+						</a>
+					</div>
+					<div class="header-top-item clearfix">
+						<a href="/ar/contact-us/form" id="cta-contact-us" class="header-top-link" title="اتصل بنا"><span class="icon icon-ki-email"></span>
+						<span class="link-text">اتصل بنا</span>
+						<span class="link-text-mob">تواصل</span></a><a href="/ar/quote" id="cta-getaquote" class="header-top-link" title="احصل على سعر"><span class="icon icon-ki-calculator"></span>
+						<span class="link-text">احصل على سعر</span>
+						<span class="link-text-mob">السعر</span></a><a href="/ar/brochure-download/form" id="cta-freebrochure" class="header-top-link" title="حمّل الكتيب المجاني"><span class="icon icon-ki-brochure"></span>
+						<span class="link-text">حمّل الكتيب المجاني</span>
+						<span class="link-text-mob">بروشور</span></a>
+						<div id='cta-phone-outer' class='header-top-link'>
+							<a href="#" id="cta-telephone" title="Telephone number to market"><span class="icon icon-ki-phone-question"></span>
+							<span class="link-text">أرقام الهواتف</span>
+							<span class="link-text-mob">اتصل</span></a>
+							<div id='cta-phone-inner'>
+								<div id='cta-telephone-multiple'>
+									<div class='cta-telephone-item'><a href="tel:+44 7826915546" class="header-phone-link" title="Telephone number to market"><span><span dir="ltr"> <span class='flag-icon'><img class="countryicon iconset-kaplan countrycode-sa" src="https://cdn.kaplaninternational.com//profiles/base_drupal_build/themes/kis_theme/images/country-icons/sa.png" width="24" height="24" alt="SA Flag" /></span>+44 7826915546</span>
+										</span></a>
+									</div>
+									<div class='cta-telephone-item'><a href="tel:+44 2087275181" class="header-phone-link" title="Telephone number to market"><span><span dir="ltr"> <span class='flag-icon'><img class="countryicon iconset-kaplan countrycode-sa" src="https://cdn.kaplaninternational.com//profiles/base_drupal_build/themes/kis_theme/images/country-icons/sa.png" width="24" height="24" alt="SA Flag" /></span>+44 2087275181</span></span></a></div>
+								</div>
+							</div>
+						</div>
+						<a href="#" id="cta-site-search" class="header-top-link hidden-xs" data-toggle="modal" data-target="#Site-Search-Popup">
+						<span class="icon icon-ki-search"></span>
+						<span class="link-text-mob">بحث</span>
+						</a>    
+					</div>
+				</div>
+				<!-- MAIN NAV : English, Destinations, Etc -->
+				<div class="header-content clearfix">
+					<div class="header-nav">
+						<nav class="navbar navbar-default navbar-static-top yamm" role="navigation">
+							<div class="container-fluid navbar-container">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="menu-text">قائمة</span>
+									</button>
+									<div class="header-logo">
+										<a href="/ar" title="الرئيسية">
+										<img class="kielogo img-responsive" src="/profiles/base_drupal_build/themes/kis_theme/logo-mobile.png?v2" alt="الرئيسية">
+										</a>
+									</div>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div id="kie-navbar-collapse" class="navbar-collapse collapse">
+									<section id="block-kis-performance-main-menu-kis-cached" class="block block-kis-performance contextual-links-region clearfix">
+										<div class="block-content">
+											<ul class="nav navbar-nav id-menu">
+												<li class="first expanded dropdown yamm-fw">
+													<a href="/ar/about-kaplan-hub/k-plus0" data-toggle="dropdown" class="dropdown-toggle">دورات الإتجليزي<b class="caret"></b></a>
+													<ul class="dropdown-menu id-submenu">
+														<li class="grid-demo">
+															<div class="yamm-content">
+																<ul class="list-unstyled">
+																	<li class="first leaf dropdown yamm-fw"><a href="/ar/english-courses-abroad">دورات إنجليزي</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/adult-english-courses">دورات إنجليزي لأعمار 16 وما فوق</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/young-learners">دورات إنجليزي للصغار</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/long-term-courses/university-experience-year">University Experience Year</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/kaplan-summer">دورات إنجليزي صيفية</a></li>
+																	<li class="collapsed dropdown yamm-fw"><a href="/ar/free-english-test">اختبار إنجليزي مجاني</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/ar/english-courses-abroad/benefits-learning-english-0">فوائد تعلّم اللغة الإنجليزية</a></li>
+																	<li class="last leaf dropdown yamm-fw"><a href="/ar/university-placement-service">خدمة القبولات الجامعية UPS</a></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="expanded dropdown yamm-fw">
+													<a href="/ar/destinations" data-toggle="dropdown" class="dropdown-toggle">مواقع المعاهد<b class="caret"></b></a>
+													<ul class="dropdown-menu id-submenu">
+														<li class="grid-demo">
+															<div class="yamm-content">
+																<ul class="list-unstyled">
+																	<li class="first leaf dropdown yamm-fw"><a href="/ar/destinations">كل المواقع</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/united-states">أمريكا</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/united-kingdom">بريطانيا</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/ireland">أيرلندا</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/australia">أستراليا</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/canada">كندا</a></li>
+																	<li class="last leaf dropdown yamm-fw"><a href="/ar/new-zealand">نيوزيلندا</a></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="expanded dropdown yamm-fw">
+													<a href="/ar/higher-education" data-toggle="dropdown" class="dropdown-toggle">التعليم الجامعي<b class="caret"></b></a>
+													<ul class="dropdown-menu id-submenu">
+														<li class="grid-demo">
+															<div class="yamm-content">
+																<ul class="list-unstyled">
+																	<li class="first leaf dropdown yamm-fw"><a href="/ar/higher-education">التعليم الجامعي</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/long-term-courses/university-experience-year">University Experience Year</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/higher-education/university-placement-service">خدمة القبولات الجامعية</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/higher-education/lklyt-lmtwst">خدمة الكليات المتوسطة</a></li>
+																	<li class="last leaf dropdown yamm-fw"><a href="/ar/higher-education/pathways">برنامج المسار الجامعي</a></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="expanded dropdown yamm-fw">
+													<a href="/ar/packages" data-toggle="dropdown" class="dropdown-toggle">العروض الخاصة<b class="caret"></b></a>
+													<ul class="dropdown-menu id-submenu">
+														<li class="grid-demo">
+															<div class="yamm-content">
+																<ul class="list-unstyled">
+																	<li class="first leaf dropdown yamm-fw"><a href="/ar/packages">عروض وحزم كابلان الترويجية</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/uk-packages">عروض وحزم كابلان في بريطانيا وايرلندا</a></li>
+																	<li class="last leaf dropdown yamm-fw"><a href="/ar/usa-packages">عروض وحزم كابلان في أمريكا</a></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="expanded dropdown yamm-fw">
+													<a href="/ar/help" data-toggle="dropdown" class="dropdown-toggle">مركز الخدمات<b class="caret"></b></a>
+													<ul class="dropdown-menu id-submenu">
+														<li class="grid-demo">
+															<div class="yamm-content">
+																<ul class="list-unstyled">
+																	<li class="first last leaf dropdown yamm-fw"><a href="/ar/help">معلومات عن الفيزا والأسئلة المتكررة</a></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="expanded dropdown yamm-fw">
+													<a href="/ar/about-kaplan-hub" data-toggle="dropdown" class="dropdown-toggle">عن كابلان<b class="caret"></b></a>
+													<ul class="dropdown-menu id-submenu">
+														<li class="grid-demo">
+															<div class="yamm-content">
+																<ul class="list-unstyled">
+																	<li class="first leaf dropdown yamm-fw"><a href="/ar/about-kaplan-international-english">عن كابلان الدولية</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/about-kaplan-international-english/guaranteed-progress">تقدّم مضمون</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/about-kaplan-international-english/real-english">إنجليزي + إدارة المشاريع</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/about-kaplan-hub/k-plus-0">K+: نظام التعليم المميز</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/about-kaplan-hub/kaplan-inc">شركة كابلان</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="/ar/about-kaplan-international-english/kaplan-partners">كن شريكاً مع كابلان</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="http://careers.kaplaninternational.com/">وظائف شاغرة في بريطانيا والعالم</a></li>
+																	<li class="leaf dropdown yamm-fw"><a href="http://www.kaplan.com/join-our-team">وظائف شاغرة في أمريكا وكندا</a></li>
+																	<li class="last leaf dropdown yamm-fw"><a href="/ar/contact-details">معلومات الاتصال</a></li>
+																</ul>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="last leaf dropdown yamm-fw"><a href="/ar/english-courses-abroad/take-the-next-step">اخط خطوتك التالية للنجاح</a></li>
+											</ul>
+										</div>
+									</section>
+									<!-- /.block -->
+								</div>
+								<!-- /.navbar-collapse -->
+							</div>
+							<!-- /.container-fluid -->
+						</nav>
+					</div>
+					<!-- MEGA NAV -->
+					<div class="mega-nav">
+						<div class="grid-sizer"></div>
+						<div class="gutter-sizer"></div>
+						<div class="region region-mega-navigation">
+							<section id="block-kis-performance-menu-mega-menu-kis-cached" class="block block-kis-performance contextual-links-region clearfix">
+								<div class="block-content">
+									<ul class="menu clearfix">
+										<li  class="first expanded mega-nav__grid mega-nav__grid--2-3 menu__item level-1">
+											<a href="/ar/english-courses-abroad">دورات لغة إنجليزية</a>
+											<ul class="menu clearfix">
+												<li  class="first last expanded menu__item level-2">
+													<a href="/ar/english-courses-abroad">الدورات التي نقدمها</a>
+													<ul class="menu clearfix">
+														<li  class="first expanded menu__item level-3">
+															<a href="/ar/adult-english-courses">الطلاب / البالغين (16 سنة أو أكثر)</a>
+															<ul class="menu clearfix">
+																<li  class="first expanded menu__item level-4">
+																	<a href="/ar/flexible-english-courses">قصيرة الأمد / دورات مرنة</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/flexible-english-courses/semi-intensive-english">دورة لغة إنجليزية شبه مكثفة</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/flexible-english-courses/intensive-english">اللغة الإنجليزية المكثفة</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/flexible-english-courses/intensive-english-evening-class">الصفوف المسائية</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/flexible-english-courses/general-english">دورة لغة إنجليزية عامة</a></li>
+																	</ul>
+																</li>
+																<li  class="expanded menu__item level-4">
+																	<a href="/ar/business-english-courses">دورات لغة إنجليزية للأعمال</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/business-english-courses/intensive-business-english">دورات لغة إنجليزية مكثفة للأعمال</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/business-english-courses/supplementary-business-english">اللغة الإنجليزية للأعمال</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/dwrt-njlyzy-tkhssy">دورات اللغة الإنجليزية التخصصية </a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/business-english-courses/english-plus-professional-certificate-courses">دورات اللغة الإنجليزية والمهنية في دبلن</a></li>
+																	</ul>
+																</li>
+																<li  class="expanded menu__item level-4">
+																	<a href="/ar/exam-preparation-courses">دورات التحضير للاختبارات</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/exam-preparation-courses/toefl-exam-preparation-course">دورة تحضير لاختبار TOEFL</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/exam-preparation-courses/ielts-exam-preparation-intensive">دورة تحضير لاختبار IELTS</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/exam-preparation-courses/gmat">دورة تحضير لاختبار GMAT</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/exam-preparation-courses/gre">دورة تحضير لاختبار GRE</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/exam-preparation-courses/cambridge-intensive">دورة تحضير لاختبار كامبريدج</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/exam-preparation-courses/cambridge-intensive-fce">دورة إعداد لامتحان كامبريدج B2 First</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/exam-preparation-courses/cambridge-intensive-cae">دورة إعداد لامتحان كامبريدج C1 Advanced</a></li>
+																	</ul>
+																</li>
+																<li  class="leaf menu__item level-4"><a href="/ar/english-courses-abroad/take-the-next-step">اخط خطوتك التالية للنجاح</a></li>
+																<li  class="expanded menu__item level-4">
+																	<a href="/ar/long-term-courses">طويلة الأمد / دورات فصلية</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/long-term-courses/english-academic-semester-6-months">فصل أكاديمي - 6 شهور</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/long-term-courses/intensive-academic-semester-6-months">فصل أكاديمي مكثف - 6 شهور</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/long-term-courses/english-academic-year">سنة أكاديمية</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/long-term-courses/intensive-academic-year">سنة أكاديمية مكثفة</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/long-term-courses/english-academic-purposes">دورة لغة إنجليزية لأغراض أكاديمية</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/long-term-courses/university-experience-year">University Experience Year</a></li>
+																	</ul>
+																</li>
+																<li  class="last leaf menu__item level-4"><a href="/ar/kaplan-summer">دورات إنجليزي صيفية</a></li>
+															</ul>
+														</li>
+														<li  class="last expanded menu__item level-3">
+															<a href="/ar/young-learners">الطلاب الصغار والمراهقين</a>
+															<ul class="menu clearfix">
+																<li  class="first last expanded menu__item level-4">
+																	<a href="/ar/young-learners">اعرف المزيد عن التعلّم في:</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/united-states">أمريكا</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/united-kingdom">بريطانيا</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li  class="expanded mega-nav__grid mega-nav__grid--2-3 menu__item level-1">
+											<a href="/ar/destinations">مواقع المعاهد</a>
+											<ul class="menu clearfix">
+												<li  class="first last expanded menu__item level-2">
+													<a href="/ar/destinations">مواقع معاهدنا</a>
+													<ul class="menu clearfix">
+														<li  class="first expanded menu__item level-3">
+															<a href="/ar/adult-english-courses" class="hidden">الطلاب / البالغين (16 سنة أو أكثر)</a>
+															<ul class="menu clearfix">
+																<li  class="first expanded menu__item level-4">
+																	<a href="/ar/united-states">أمريكا</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/united-states/boston/harvard-square">بوسطن - هارفارد سكوير</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/chicago/english-school-chicago">شيكاغو</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/huntington-beach/golden-west-college">شاطئ هنتغتون</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/los-angeles/english-school-westwood">لوس أنجيلس - ويستوود</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/los-angeles/whittier">لوس أنجيلس - كلية ويتيير</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/miami/english-school-miami">ميامي</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/new-york/central-park-english-school">نيويورك – سنترال بارك</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/new-york/empire-state-english-school">نيويورك - إمباير ستيت</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/philadelphia/english-school-philadelphia">فيلادلفيا</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/portland/english-school-portland">بورتلاند</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/san-diego/english-school-san-diego">سان دييغو</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/san-francisco/english-school-san-francisco">سان فرانسيسكو</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/san-francisco/berkeley">سان فرانسيسكو - بيركلي</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/santa-barbara/english-school-santa-barbara">سانتا باربرا</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/seattle/english-school-seattle">سياتل</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-states/seattle/highline-community-college">سياتل هايلاين</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/united-states/washington-dc/english-school-washington-dc">واشنطن</a></li>
+																	</ul>
+																</li>
+																<li  class="expanded menu__item level-4">
+																	<a href="/ar/united-kingdom">بريطانيا</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/united-kingdom/london/covent-garden-english-school">لندن - كوفنت جاردن</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/london/leicester-square-english-school">لندن - ليستر سكوير</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/bath/english-school-bath">باث</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/oxford/english-school-oxford">أكسفورد</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/edinburgh/english-school-edinburgh">ادنبرة</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/bournemouth/english-school-bournemouth">بورنموث</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/torquay/english-school-torquay">توركاي</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/cambridge/english-school-cambridge">كامبريدج</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/liverpool/english-school-liverpool">ليفربول</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/united-kingdom/manchester/english-school-manchester">مانشستر</a></li>
+																	</ul>
+																</li>
+																<li  class="expanded menu__item level-4">
+																	<a href="/ar/australia">أستراليا</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/australia/adelaide/english-school-adelaide">أديليد</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/australia/brisbane/english-school-brisbane">بريسباين</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/australia/perth/english-school-perth">بيرث</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/australia/sydney/english-school-sydney">سيدني</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/australia/melbourne/english-school-melbourne">ملبورن</a></li>
+																	</ul>
+																</li>
+																<li  class="expanded menu__item level-4">
+																	<a href="/ar/ireland">ايرلندا</a>
+																	<ul class="menu clearfix">
+																		<li  class="first last leaf menu__item level-5"><a href="/ar/ireland/dublin/english-school-dublin">دبلن</a></li>
+																	</ul>
+																</li>
+																<li  class="expanded menu__item level-4">
+																	<a href="/ar/new-zealand">نيوزيلندا</a>
+																	<ul class="menu clearfix">
+																		<li  class="first last leaf menu__item level-5"><a href="/ar/new-zealand/auckland/english-school-auckland">أوكلاند</a></li>
+																	</ul>
+																</li>
+																<li  class="last expanded menu__item level-4">
+																	<a href="/ar/canada">كندا</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/canada/toronto/english-school-toronto">تورنتو</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/canada/vancouver/english-school-vancouver">فانكوفر</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														<li  class="last expanded menu__item level-3">
+															<a href="/ar/young-learners" class="hidden">الطلاب الصغار والمراهقين</a>
+															<ul class="menu clearfix">
+																<li  class="first last expanded menu__item level-4">
+																	<a href="/ar/young-learners">للصغار والمراهقين (12-16 سنة)</a>
+																	<ul class="menu clearfix">
+																		<li  class="first leaf menu__item level-5"><a href="/ar/united-states/san-diego/san-diego-young-learners">سان دييغو</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/bath/bath-young-learners">باث</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/united-kingdom/torquay/torquay-young-learners">توركاي</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/canada/vancouver/vancouver-young-learners">فانكوفر</a></li>
+																		<li  class="leaf menu__item level-5"><a href="/ar/node/2535">ادنبرة</a></li>
+																		<li  class="last leaf menu__item level-5"><a href="/ar/node/2533">كامبريدج</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li  class="expanded menu__item level-1">
+											<a href="/ar/higher-education">التعليم الجامعي</a>
+											<ul class="menu clearfix">
+												<li  class="first last expanded menu__item level-2">
+													<a href="/ar/higher-education">التعليم الجامعي</a>
+													<ul class="menu clearfix">
+														<li  class="first leaf menu__item level-3"><a href="/ar/long-term-courses/university-experience-year">University Experience Year</a></li>
+														<li  class="leaf menu__item level-3"><a href="/ar/higher-education/university-placement-service">خدمة القبولات الجامعية</a></li>
+														<li  class="leaf menu__item level-3"><a href="/ar/higher-education/lklyt-lmtwst">خدمة الكليات المتوسطة</a></li>
+														<li  class="last leaf menu__item level-3"><a href="/ar/higher-education/pathways">برنامج المسار الجامعي - Pathways</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li  class="expanded menu__item level-1">
+											<a href="/ar/faq-categories/general-information">أسئلة متكررة ودعم</a>
+											<ul class="menu clearfix">
+												<li  class="first last expanded menu__item level-2">
+													<a href="/ar/faq-categories/general-information">الأسئلة الأكثر تكراراً ومركز المساعدة</a>
+													<ul class="menu clearfix">
+														<li  class="first expanded menu__item level-3">
+															<a href="/ar/faq-categories/general-information">الأسئلة الأكثر تكراراً</a>
+															<ul class="menu clearfix">
+																<li  class="first leaf menu__item level-4"><a href="/ar/help">إجابة على أهم الأسئلة</a></li>
+																<li  class="leaf menu__item level-4"><a href="/ar/faq-categories/english-courses">دراسة اللغة الإنجليزية في الخارج</a></li>
+																<li  class="last leaf menu__item level-4"><a href="/ar/faq-categories/accommodation">السكن</a></li>
+															</ul>
+														</li>
+														<li  class="leaf menu__item level-3"><a href="/ar/help">(معلومات عن تأشيرة الدخول (الفيزا</a></li>
+														<li  class="last leaf menu__item level-3"><a href="/ar/english-test">اختبار لغة إنجليزية مجاني</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li  class="expanded active-trail active menu__item level-1">
+											<a href="/ar/about-kaplan-international-english" class="active-trail">عن كابلان</a>
+											<ul class="menu clearfix">
+												<li  class="first last expanded active-trail active menu__item level-2">
+													<a href="/ar/about-kaplan-international-english" class="active-trail">عن كابلان</a>
+													<ul class="menu clearfix">
+														<li  class="first leaf menu__item level-3"><a href="/ar/about-kaplan-international-english/guaranteed-progress">تقدّم مضمون</a></li>
+														<li  class="leaf active-trail active menu__item level-3"><a href="/ar/about-kaplan-international-english/real-english" class="active-trail active">إنجليزي + إدارة المشاريع</a></li>
+														<li  class="collapsed menu__item level-3"><a href="/ar/ar/english-courses-abroad/benefits-learning-english-0">مزايا تعلّم اللغة الإنجليزية في الخارج</a></li>
+														<li  class="leaf menu__item level-3"><a href="/ar/about-kaplan-hub/k-plus-0">K+ منهجية التعليم حسب نظام</a></li>
+														<li  class="expanded menu__item level-3">
+															<a href="/ar/about-kaplan-international-english">عن كابلان الدولية</a>
+															<ul class="menu clearfix">
+																<li  class="first leaf menu__item level-4"><a href="/ar/corporate-enquiries">استفسارات الشركات والمؤسسات</a></li>
+																<li  class="leaf menu__item level-4"><a href="/ar/about-kaplan-hub/kaplan-inc">شركة كابلان</a></li>
+																<li  class="leaf menu__item level-4"><a href="http://careers.kaplaninternational.com/">وظائف في كابلان</a></li>
+																<li  class="leaf menu__item level-4"><a href="/ar/about-kaplan-international-english/ltmdt-wldwyt-lmhd-kbln">الاعتمادات والعضويات</a></li>
+																<li  class="last leaf menu__item level-4"><a href="/ar/contact-details">معلومات الاتصال</a></li>
+															</ul>
+														</li>
+														<li  class="last leaf menu__item level-3"><a href="/ar/about-kaplan-international-english/kaplan-partners">كن شريكاً معنا</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li  class="last leaf menu__item level-1"><a href="/ar/promotions">عروض خاصة</a></li>
+									</ul>
+								</div>
+							</section>
+							<!-- /.block -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Site Search - Popup -->
+			<div class="modal fade" id="Site-Search-Popup" tabindex="-1" role="dialog" aria-labelledby="Site-Search-PopupLabel">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="icon icon-ki-close"></span>
+						</button>
+						<div class="modal-body">
+							<div class="site-search clearfix">
+								<form class="ng-non-bindable" action="/ar" method="post" id="-kis-general-search-form" accept-charset="UTF-8">
+									<div>
+										<div class="form-item form-item-term form-type-textfield form-group"><input placeholder="Search ..." class="form-control form-text" type="text" id="edit-term" name="term" value="" size="225" maxlength="128" /></div>
+										<button class="icon icon-ki-search btn form-submit" type="submit" id="edit-submit--4" name="op" value=""></button>
+										<input type="hidden" name="form_build_id" value="form-IHR677bE4Lb4FBH3-mNwJo55iBojADY7PjcHoAjSv7s" />
+										<input type="hidden" name="form_token" value="jC4qnAKnyrKJFL2kAqUaqFQVVqQ_PgRua4JjJh9DMIE" />
+										<input type="hidden" name="form_id" value="_kis_general_search_form" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Content -->
+			<section id="content" class="content page">
+				<div class="breadcrumb-container">
+					<div class="container">
+						<h2 class="element-invisible">أنت هنا</h2>
+						<div class="breadcrumb"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/ar" itemprop="url"><span itemprop="title">الرئيسية</span></a></span><span class="crumbs-separator"> &gt; </span>دورات لغة في الخارج للصغار</div>
+					</div>
+				</div>
+				<div id="section-hero" class="title-container">
+					<div class="title-container-shadow"></div>
+					<div class="container">
+						<h1 class="page-header">دورات لغة في الخارج للصغار</h1>
+						<!-- Subtitle region -->
+					</div>
+				</div>
+				<!-- Promo Ribbon -->
+				<!-- Page anchors -->
+				<a id="main-content"></a>
+				<div class="container">
+					<h2 class="element-invisible">التبويبات الأساسية</h2>
+					<ul class="tabs--primary nav nav-tabs">
+						<li class="active"><a href="/ar/junior-language-courses" class="active">View published<span class="element-invisible">(علامة التبويب النشطة)</span></a></li>
+						<li><a href="/ar/node/3067/manage_files">Attached files</a></li>
+						<li><a href="/ar/node/3067/edit?content_lock_token=XHacJa_T2DndMENj5FwHAld-wnG-Od7MEqUCo344zIU">New draft</a></li>
+						<li><a href="/ar/node/3067/moderation">Moderate</a></li>
+						<li><a href="/ar/node/3067/translate">ترجمة</a></li>
+					</ul>
+				</div>
+				<div class="region region-content">
+					<section id="block-workbench-block" class="block block-workbench contextual-links-region clearfix">
+						<div class="block-content">
+							<div class="workbench-info-block">Revision state: <em>Published</em><br />Most recent revision: <em>نعم</em><br />Actions: <em><a href="/ar/node/3067/moderation/136293/unpublish">Unpublish this revision</a></em></div>
+						</div>
+					</section>
+					<!-- /.block -->
+					<section id="block-system-main" class="block block-system clearfix">
+						<div class="block-content">
+							<div class="node node-hub view-mode-full node-3067 clearfix row ds-layout-hub">
+								<!-- Banner row -->
+								<!-- Sections row -->
+								<div class="ds-row-4 clearfix container">
+									<div class="field-collection-container clearfix">
+										<div class="field field-name-field-section-items field-type-field-collection field-label-hidden">
+											<div class="field-items">
+												<div class="field-item even">
+													<div class="field-collection-view clearfix view-mode-full field-collection-view-final">
+														<div class="row">
+															<div class="col-xs-12 layout-none clearfix">
+																<div class="field field-name-field-section-description field-type-text-with-summary field-label-hidden">
+																	<div class="field-items">
+																		<div class="field-item even">
+																			<script>
+																				<!--//--><![CDATA[// ><!--
+																				document.createElement( "picture" );
+																				//--><!]]>
+																			</script>
+
+																			<script type="text/javascript" src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+																			
+
+
+																			<link href="/temp/styles-ar/styles.css?v1.2.1" rel="stylesheet" />
+
+																			<!-- // Custom Style -->
+																			<section class="hero-banner">
+																				<div class="hero-banner__inner">
+																					<div class="hero-banner__desc-wrapper">
+																						<h1>برامج الصغار</h1>
+																						<h5>دورات لغوية غامرة للطلاب الذين تتراوح أعمارهم بين 8 و 18 عاماً</h5>
+																					</div>
+																					<div class="overlay-filter"> </div>
+																					<picture>
+																						<source media="(min-width: 650px)" srcset="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/jr-hub--hero-md.jpg"><img srcset="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/jr-hub--hero-xs.jpg" /></source>
+																					</picture>
+																				</div>
+																			</section>
+																			<nav class="menu">
+																				<ul>
+																					<li><a class="scroll" href="#About-Programs">عن برامج الصغار</a></li>
+																					<li><a class="scroll" href="#Summer-Camps">برامج مجموعات المخيمات الصيفية</a></li>
+																					<li><a class="scroll" href="#Group-English">برامج المجموعات</a></li>
+																				</ul>
+																			</nav>
+																			<section class="description-area page-section">
+																				<div class="description-area__inner" id="About-Programs">
+																					<h1>دورات لغة للطلاب الصغار</h1>
+																					<p>إن دوراتنا اللغوية الغامرة للطلاب الذين تتراوح أعمارهم بين 8 و 18 عاماً ممتعةٌ للغاية، حيث ستتعلم لغة جديدة دون ملاحظة ذلك. نحن نمزج بين تعليمنا اللغوي المتميز، والأنشطة والمغامرات في الهواء الطلق، والاستكشافات الجديدة، ونقوم بجمع الطلاب من مختلف أنحاء العالم وتشجيعهم على بناء علاقات صداقة دولية تدوم مدى الحياة.</p>
+																					<p>تعلّم اللغة الإنجليزية أو الفرنسية أو الألمانية في واحدة من وجهاتنا الرائعة للصغار في جميع أنحاء أوروبا والولايات المتحدة الأمريكية وكندا</p>
+																				</div>
+																			</section>
+																			<section class="choose-your-program page-section">
+																				<div class="wrapper">
+																					<h1>اختر برنامجك</h1>
+																					<ul class="choose-your-program__items equal-parent">
+																						<li class="choose-your-program__item equal-child-item" id="Summer-Camps">
+																							<a href="/ar/junior-language-courses/summer-camps"><img alt="" src="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/program1.jpg" /></a>
+																							<h5>مخيمات صيفية لغوية</h5>
+																							<p>مخيمات صيفية مليئة بالإثارة للطلاب الذين تزيد أعمارهم عن 8 سنوات في المملكة المتحدة وألمانيا وفرنسا وسويسرا. تعلم اللغة الإنجليزية أو الفرنسية أو الألمانية.</p>
+																							<a class="_btn _btn--find-out-more" href="/ar/junior-language-courses/summer-camps"><span>اعرف المزيد عن مخيماتنا الصيفية</span></a>
+																						</li>
+																						<li class="choose-your-program__item equal-child-item" id="Group-English">
+																							<a href="/ar/young-learners"><img alt="" src="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/program2.jpg" /></a>
+																							<h5>برامج مخصصة لمجموعة اللغة الإنجليزية للصغار</h5>
+																							<p>حُزم تعلم لغة إنجليزية مصممة خصيصاً لمجموعات الصغار الذين يرغبون في الدراسة معًا. اختر موقعك المفضل والتواريخ ودورة اللغة الإنجليزية والبرنامج الاجتماعي.</p>
+																							<a class="_btn _btn--find-out-more" href="/ar/young-learners"><span>تعرف على المزيد حول إنشاء حُزمة مخصصة لتعلم اللغة الإنجليزية</span></a>
+																						</li>
+																					</ul>
+																				</div>
+																			</section>
+																			<section class="experiences page-section">
+																				<div class="experiences__inner">
+																					<div class="wrapper">
+																						<h1>تجارب لا تُنسى</h1>
+																						<p>سوف يعيش طلابنا الصغار تجربة العمر، ويعودون إلى منازلهم محمّلين بذكريات لا تُنسى مليئة بالمرح، ومهارات لغوية عالية. الرحلات الاستكشافية والأنشطة الخارجية الممتعة ليست مجرد إضافة إلى برامج الصغار لدينا؛ إنها جزءٌ لا يتجزأ من عملية تعلّم اللغة.</p>
+																						<ul>
+																							<li>
+																								<a data-target="#modal1" data-toggle="modal">
+																									<img alt="" src="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/experience-icon-1.png" />
+																									<p>تطبيق اللغات بشكل فعلي</p>
+																									<span class="plus"></span> 
+																								</a>
+																							</li>
+																							<li>
+																								<a data-target="#modal2" data-toggle="modal">
+																									<img alt="" src="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/experience-icon-2.png" />
+																									<p>التعلُّم القائم على المشاريع</p>
+																									<span class="plus"></span> 
+																								</a>
+																							</li>
+																							<li>
+																								<a data-target="#modal3" data-toggle="modal">
+																									<img alt="" src="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/experience-icon-3_2.png" />
+																									<p>السلامة ومرافق الإقامة</p>
+																									<span class="plus"></span> 
+																								</a>
+																							</li>
+																						</ul>
+																					</div>
+																					<div class="overlay-filter"> </div>
+																				</div>
+																				<!-- Modal -->
+																				<div class="modal fade" id="modal1" role="dialog">
+																					<div class="modal-dialog">
+																						<!-- Modal content-->
+																						<div class="modal-content">
+																							<button class="close" data-dismiss="modal" type="button">×</button>
+																							<div class="modal-body ">
+																								<div class="experiences__modal-content">
+																									<h5>تطبيق اللغات بشكل فعلي</h5>
+																									<img alt="" src="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/experience-icon-1.png" />
+																									<p>يقوم معلمونا بإعداد أنشطة الفصول الدراسية استنادًا إلى نزهة اليوم أو الأنشطة الخارجية التي سيقومون بها، ويمكنك ممارسة مهاراتك اللغوية أثناء استكشاف وجهات جديدة والتعرف على المعالم السياحية. وإذا كنت تعيش في منزل لدى عائلة مُضيفة، فستتمكن من ممارسة اللغة التي تتعلمها في الفصل داخل المنزل مع أفراد العائلة المُضيفة.</p>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="modal fade" id="modal2" role="dialog">
+																					<div class="modal-dialog">
+																						<!-- Modal content-->
+																						<div class="modal-content">
+																							<button class="close" data-dismiss="modal" type="button">×</button>
+																							<div class="modal-body ">
+																								<div class="experiences__modal-content">
+																									<h5>التعلُّم القائم على المشاريع</h5>
+																									<img alt="" src="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/experience-icon-2.png" />
+																									<p>قُم بإصدار مجلة مدرسية، أو تجهيز عرض للأزياء، أو إنتاج فيلم وتعديل الفيديو الخاص بك؛ كل ذلك جزء من دروسك. من خلال التعاون مع الطلاب الآخرين في انجاز مشاريع ممتعة، ستقوم بتطوير مهاراتك في الإبداع والقيادة وإدارة الوقت، وذلك مع تحسين طلاقة اللغة لديك بنفس الوقت.</p>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="modal fade" id="modal3" role="dialog">
+																					<div class="modal-dialog">
+																						<!-- Modal content-->
+																						<div class="modal-content">
+																							<button class="close" data-dismiss="modal" type="button">×</button>
+																							<div class="modal-body ">
+																								<div class="experiences__modal-content">
+																									<h5>السلامة ومرافق الإقامة</h5>
+																									<img alt="" src="https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/experience-icon-3_2.png" />
+																									<p>يتم التحقّق من موظفينا بالكامل، ويوجد دائما عدد كبير من الموظفين نسبةً إلى عدد الطلاب الملتحقين ضمن برامجنا لضمان توفّر الكثير من الدعم الفردي، كما يوجد أيضاً خط مساعدة للطوارئ يعمل على مدار 24 ساعة للاستجابة لأي استفسارات أو مخاوف أو مشاكل. لدينا سياسات صارمة للسلامة والأمن في مساكن طلابنا الصغار، مع تواجد موظفينا هناك. نقوم أيضاً بإجراء عمليات فحص خلفية شاملة للعائلات المُضيفة، ويتم اختيار الأسر المُضيفة التي لديها خبرة في استيعاب الطلاب الدوليين الصغار.</p>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</section>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- /.block -->
+				</div>
+			</section>
+			<!-- Highlighted content -->
+			<!-- Under Highlighted content -->
+			<footer class="footer clearfix">
+				<div class="email-sub">
+					<div class="container">
+						<div class="row equal-parent">
+							<div class="col-sm-6 equal-child-item email-sub-text clearfix">
+								<div class="region region-primary-footer-first">
+									<section id="block-kis-pages-feature-kis-newsletter-banner" class="block block-kis-pages-feature contextual-links-region clearfix">
+										<div class="block-content">
+											<h2 class="text-sm">لا تفوّت على نفسك أحدث العروض والأخبار عن تعلم اللغة الإنجليزية من كابلان</h2>
+											<p>احصل على أحدث عروضنا الخاصة وأخبارنا عن تعلم اللغة الإنجليزية في الخارج في بريدك الإلكتروني.</p>
+											<div>
+												<a href="/ar/node/2101/translate?destination=node/3067">Edit/Translate</a>
+											</div>
+										</div>
+									</section>
+									<!-- /.block -->
+								</div>
+							</div>
+							<div id="cta-email-sign-up" class="col-sm-6 equal-child-item email-sub-form">
+								<div class="region region-primary-footer-second">
+									<section id="block-kis-webform-content-type-kis-email-signup" class="block block-kis-webform-content-type contextual-links-region clearfix">
+										<div class="vertical-center-wrapper">
+											<div class="vertical-center-inner field-container">
+												<div class="block-content">
+													<form class="ng-non-bindable" action="/ar/newsletter-signup/form" method="post" id="-kis-email-signup-form" accept-charset="UTF-8">
+														<div>
+															<div class="field-container container-inline">
+																<div class="form-item form-item-email form-type-textfield form-group"><input placeholder="ادخل عنوان بريدك الالكتروني" class="form-control form-text" type="text" id="edit-email" name="email" value="" size="60" maxlength="128" /></div>
+																<button type="submit" id="edit-submit--2" name="op" value="سجل الآن!" class="btn btn-default form-submit">سجل الآن!</button>
+															</div>
+															<input type="hidden" name="form_build_id" value="form-Kh0kDWAWWYjbLa1obI77ogRy7JiTN_IjoauWe_C29z0" />
+															<input type="hidden" name="form_token" value="UBw5vKppJbnvJBXCKgK5qJ3OObstbGVHkWIByetwb8Q" />
+															<input type="hidden" name="form_id" value="_kis_email_signup_form" />
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="links">
+					<div class="go-to-top hidden-xs">
+						<a href="#wrapper" class="btn scroll">
+							<!-- Go To Top -->
+						</a>
+					</div>
+					<div class="container clearfix">
+						<div class="row">
+							<div class="col-xs-12 col-sm-8">
+								<div class="featured-links">
+									<div class="region region-secondary-footer-first">
+										<section id="block-menu-menu-landing" class="block block-menu contextual-links-region link-landing clearfix">
+											<div class="contextual-links-wrapper">
+												<ul class="contextual-links">
+													<li class="menu-list first"><a href="/ar/admin/structure/menu/manage/menu-landing/list?destination=node/3067">سرد الروابط</a></li>
+													<li class="menu-edit last"><a href="/ar/admin/structure/menu/manage/menu-landing/edit?destination=node/3067">تحرير القائمة</a></li>
+												</ul>
+											</div>
+											<div class="block-content">
+												<ul>
+													<li class="first leaf"><a href="/ar/english-courses-abroad">دورات إنجليزي بالخارج</a></li>
+													<li class="leaf"><a href="/ar/adult-english-courses">دورات إنجليزي للكبار</a></li>
+													<li class="leaf"><a href="/ar/young-learners">دورات إنجليزي للصغار</a></li>
+													<li class="leaf"><a href="/ar/destinations">مواقع معاهد الإنجليزي</a></li>
+													<li class="last leaf"><a href="/ar/about-kaplan-hub">عن كابلان</a></li>
+												</ul>
+											</div>
+										</section>
+										<!-- /.block -->
+										<section id="block-menu-menu-useful-links" class="block block-menu contextual-links-region clearfix">
+											<div class="contextual-links-wrapper">
+												<ul class="contextual-links">
+													<li class="menu-list first"><a href="/ar/admin/structure/menu/manage/menu-useful-links/list?destination=node/3067">سرد الروابط</a></li>
+													<li class="menu-edit last"><a href="/ar/admin/structure/menu/manage/menu-useful-links/edit?destination=node/3067">تحرير القائمة</a></li>
+												</ul>
+											</div>
+											<div class="block-content">
+												<ul>
+													<li class="first leaf"><a href="/ar/english-test">اختبار إنجليزي مجاني</a></li>
+													<li class="leaf"><a href="/ar/terms-and-conditions">الشروط والقوانين</a></li>
+													<li class="leaf"><a href="/ar/about-kaplan-international-english/kaplan-partners">كن شريكاً مع كابلان</a></li>
+													<li class="leaf"><a href="/ar/contact-details">معلومات الاتصال</a></li>
+													<li class="leaf"><a href="/ar/cookies-and-other-technologies">ملفات تعريف الارتباط والتقنيات الأخرى</a></li>
+													<li class="leaf"><a href="http://careers.kaplaninternational.com">وظائف</a></li>
+													<li class="last leaf"><a href="https://www.kaplaninternational.com/privacy-notice"> بيان الخصوصية</a></li>
+												</ul>
+											</div>
+										</section>
+										<!-- /.block -->
+										<section id="block-kis-pages-feature-kis-footer-links-cta" class="block block-kis-pages-feature contextual-links-region clearfix">
+											<div class="block-content">
+												<div class="link-cta clearfix">
+													<p>
+														<a href="/ar/brochure-download/form" class="btn btn-md btn-white-border">حمّل الكتيب المجاني</a>
+														<a href="/ar/contact-us/form" class="btn btn-md btn-white-border">اتصل بمستشار الطلاب</a>
+														<span href="#" class="phone">
+														<span class="text-pale text">أو</span>
+														<span class="icon icon-ki-phone"></span>
+														<span> +44 7826915546
+														|  +44 2087275181</span>
+														</span>
+													</p>
+												</div>
+											</div>
+										</section>
+										<!-- /.block -->
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<div class="social-links">
+									<div class="region region-secondary-footer-second">
+										<section id="block-menu-menu-follow-us" class="block block-menu contextual-links-region clearfix">
+											<div class="contextual-links-wrapper">
+												<ul class="contextual-links">
+													<li class="menu-list first"><a href="/ar/admin/structure/menu/manage/menu-follow-us/list?destination=node/3067">سرد الروابط</a></li>
+													<li class="menu-edit last"><a href="/ar/admin/structure/menu/manage/menu-follow-us/edit?destination=node/3067">تحرير القائمة</a></li>
+												</ul>
+											</div>
+											<div class="block-content">
+												<ul class="menu social-network">
+													<li class="first leaf"><a href="https://www.snapchat.com/add/kaplanenglish">
+														<span class="icon icon-ki-snapchat"></span>
+														</a>
+													</li>
+													<li class="leaf"><a href="https://www.instagram.com/kaplan.arabic/">
+														<span class="icon icon-ki-instagram"></span>
+														</a>
+													</li>
+													<li class="leaf"><a href="https://twitter.com/kaplan_arabic">
+														<span class="icon icon-ki-twitter"></span>
+														</a>
+													</li>
+													<li class="leaf"><a href="https://www.facebook.com/kic.arabic">
+														<span class="icon icon-ki-facebook"></span>
+														</a>
+													</li>
+													<li class="last leaf"><a href="https://www.youtube.com/user/ArabicKaplan">
+														<span class="icon icon-ki-youtube"></span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</section>
+										<!-- /.block -->
+										<section id="block-kis-pages-feature-blog-link" class="block block-kis-pages-feature contextual-links-region clearfix">
+											<div class="block-content">
+												<div class="kie-blog">
+													<a href="//www.kaplaninternational.com/ara/blog/" class="btn">مدونة كابلان</a>
+												</div>
+											</div>
+										</section>
+										<!-- /.block -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Accreditations -->
+				<div class="accreditation">
+					<div class="container clearfix">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="region region-secondary-footer-third">
+									<section id="block-views-8cdb6d235120fe3dfb90976fcf748246" class="block block-views contextual-links-region accreditation-container clearfix">
+										<h4 class="block-title">معاهد كابلان الدولية مُعتمدة من قِبَل</h4>
+										<div class="contextual-links-wrapper">
+											<ul class="contextual-links">
+												<li class="draggableviews-order first last"><a href="/ar/accreditations-sorting-at-front-page?destination=node/3067">Order view</a></li>
+											</ul>
+										</div>
+										<div class="block-content">
+											<div class='row'>
+												<div class="view view-accreditations view-id-accreditations view-display-id-worldwide_accreditations view-dom-id-ca673b8fd5c80bd3f2237ba3d9afaa9c">
+													<div class="view-content">
+														<div class="col-sm-2">
+															<div class="footer-accreditation-item">
+																<h4>تعلم الإنجليزية في أمريكا</h4>
+																<img class="img-responsive" src="https://cdn.kaplaninternational.com/sites/default/files/styles/120x0/public/accreditation/logo/acc-us-accet-w.png?itok=ylWr8TTD" width="101" height="31" alt="" />    
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="footer-accreditation-item">
+																<h4>بريطانيا</h4>
+																<img class="img-responsive" src="https://cdn.kaplaninternational.com/sites/default/files/styles/120x0/public/accreditation/logo/acc-uk-british-council-w_0.png?itok=2h6rlqKy" width="89" height="62" alt="" />    
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="footer-accreditation-item">
+																<h4>أستراليا</h4>
+																<img class="img-responsive" src="https://cdn.kaplaninternational.com/sites/default/files/styles/120x0/public/accreditation/logo/acc-au-english-australia-w_0.png?itok=QKDA7ukp" width="100" height="70" alt="" />    
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="footer-accreditation-item">
+																<h4>كندا</h4>
+																<img class="img-responsive" src="https://cdn.kaplaninternational.com/sites/default/files/styles/120x0/public/acc-ca-language-canada-w.png?itok=-vVKRnP7" width="104" height="46" alt="" />    
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="footer-accreditation-item">
+																<h4>نيوزيلندا</h4>
+																<img class="img-responsive" src="https://cdn.kaplaninternational.com/sites/default/files/styles/120x0/public/accreditation/logo/acc-nz-english-newzealand-w_1.png?itok=ulE7mEEr" width="104" height="45" alt="" />    
+															</div>
+														</div>
+														<div class="col-sm-2">
+															<div class="footer-accreditation-item">
+																<h4>ايرلندا</h4>
+																<img class="img-responsive" src="https://cdn.kaplaninternational.com/sites/default/files/styles/120x0/public/accreditation/logo/acc-ie-acels-w.png?itok=biazgrfB" width="37" height="60" alt="" />    
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+									<!-- /.block -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="subfooter">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="region region-thirdly-footer-first">
+									<section id="block-kis-language-selector-languageselector" class="block block-kis-language-selector contextual-links-region clearfix">
+										<div class="block-content">
+											<div class="lang-switch">
+												<a href="/ar/languages?destination=node/3067" title="غيّر لغة الموقع" class="header-top-link" id="cta-language-selector">
+												<span class="icon icon-ki-world"></span>
+												<span class="location">العربية (Arabic)</span>
+												</a>
+											</div>
+										</div>
+									</section>
+									<!-- /.block -->
+								</div>
+							</div>
+							<div class="col-sm-9 kaplan-address">
+								<div class="region region-thirdly-footer-second">
+									<section id="block-kis-pages-feature-kis-footer-about" class="block block-kis-pages-feature contextual-links-region clearfix">
+										<div class="block-content">
+											<p class="text-center">© 2019 Aspect Education Ltd, Reg No: 4053877 / VAT No: 152088224 / Reg office: 2F, Warwick Building, Kensington Village, Avonmore Road, London, W14 8HQ UK</p>
+										</div>
+									</section>
+									<!-- /.block -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="quote-container"></div>
+			</footer>
+			<script type="text/ng-template" id="modal.html">
+				<div ng-show="modalOpened" class="modal fade in {{modalClass}}" tabindex="-1" role="dialog" style="display: block;">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" ng-click="close()" aria-hidden="modalOpened"></button>
+				        <h4 class="modal-title">{{title}}</h4>
+				      </div>
+				      <div class="modal-body" ng-transclude></div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				  <div class="modal-backdrop fade in" ng-show="modalOpened" ng-click="close()"></div>
+				</div>
+			</script>
+			<div id="admin-menu" class="admin-menu-site-cmsadmin-prod-ekapiww-kapintdc-com">
+				<div id="admin-menu-wrapper">
+					<ul id="admin-menu-icon" class="dropdown">
+						<li class="admin-menu-icon admin-menu-toolbar-home-menu expandable">
+							<a href="/ar"><span class="admin-menu-home-icon">&nbsp;</span></a>
+							<ul class="dropdown">
+								<li><a href="/ar/admin/index">الفهرس</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul id="admin-menu-menu" class="dropdown">
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/workbench">My Workbench</a>
+							<ul class="dropdown">
+								<li class="expandable">
+									<a href="/ar/admin/workbench/create">أنشئ محتوى</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/workbench/create/node/add/accreditation">Accreditation</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/course">Course</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/course-type">Course type</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/education-advisor">Education advisor</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/faq">FAQ</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/hub">Hub</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/image">Image</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/kaplan-office">Kaplan office</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/promotional">Promotional content</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/school">School</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/table-of-content">Table of Content</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/student-testimonial">Testimonial</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/visa">Visa</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/webform">Webform</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/page">Webpage</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/workbench/drafts">My drafts</a></li>
+								<li><a href="/ar/admin/workbench/needs-review">Needs review</a></li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/content">المحتوى:</a>
+							<ul class="dropdown">
+								<li class="expandable">
+									<a href="/ar/block/add">Add Block</a>
+									<ul class="dropdown">
+										<li><a href="/ar/block/add/content-block">Content  block</a></li>
+										<li><a href="/ar/block/add/cta-block">CTA block</a></li>
+										<li><a href="/ar/block/add/trustpilot-block">Trustpilot block</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/content/content-lock-overview">Content Lock Overview</a></li>
+								<li class="expandable">
+									<a href="/ar/admin/content/reports/content-overview/extra">Extra</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/reports/content-overview">Content Overview</a></li>
+										<li><a href="/ar/admin/reports/school-courses-overview">School Courses Overview</a></li>
+										<li><a href="/ar/admin/content/reports/accommodation/homestay-content">Homestay Overview</a></li>
+										<li><a href="/ar/admin/content/reports/accommodation/homestay-products">Homestay Products</a></li>
+										<li><a href="/ar/admin/content/reports/accommodation/residence-content">Residence Overview</a></li>
+										<li><a href="/ar/admin/content/reports/accommodation/residence-products">Residence Products</a></li>
+										<li><a href="/ar/admin/reports/product-updates">Product and Price Updates</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/content/faq_visa">FAQ &amp; VISA</a></li>
+								<li><a href="/ar/admin/content/webform">Webforms</a></li>
+								<li class="expandable">
+									<a href="/ar/node/add">إضافة محتوى</a>
+									<ul class="dropdown">
+										<li><a href="/ar/node/add/accreditation">Accreditation</a></li>
+										<li><a href="/ar/node/add/course">Course</a></li>
+										<li><a href="/ar/node/add/course-type">Course type</a></li>
+										<li><a href="/ar/node/add/education-advisor">Education advisor</a></li>
+										<li><a href="/ar/node/add/faq">FAQ</a></li>
+										<li><a href="/ar/node/add/hub">Hub</a></li>
+										<li><a href="/ar/node/add/image">Image</a></li>
+										<li><a href="/ar/node/add/kaplan-office">Kaplan office</a></li>
+										<li><a href="/ar/node/add/promotional">Promotional content</a></li>
+										<li><a href="/ar/node/add/school">School</a></li>
+										<li><a href="/ar/node/add/table-of-content">Table of Content</a></li>
+										<li><a href="/ar/node/add/student-testimonial">Testimonial</a></li>
+										<li><a href="/ar/node/add/visa">Visa</a></li>
+										<li><a href="/ar/node/add/webform">Webform</a></li>
+										<li><a href="/ar/node/add/page">Webpage</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/content/taxonomy">التصنيف</a></li>
+								<li><a href="/ar/admin/content/blocks">الصناديق</a></li>
+								<li class="expandable">
+									<a href="/ar/admin/content/file">الملفات</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/content/file/generate">Generate files</a></li>
+										<li><a href="/ar/admin/content/file/thumbnails">Thumbnails</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/content/content_lock">Locked documents</a></li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/structure">الهيكلية</a>
+							<ul class="dropdown">
+								<li class="expandable">
+									<a href="/ar/admin/structure/crumbs">Crumbs</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/structure/crumbs/display">العرض</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/crumbs/entity-parent">Entity parent</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/crumbs/entity-parent/taxonomy-term">التصنيف</a></li>
+												<li><a href="/ar/admin/structure/crumbs/entity-parent/user">المستخدم</a></li>
+											</ul>
+										</li>
+										<li><a href="/ar/admin/structure/crumbs/debug">تنقيح</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/structure/taxonomy">التصنيف</a>
+									<ul class="dropdown">
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/facilities">Accommodation facilities</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/facilities/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/destination_activities">City activities</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/destination_activities/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/course_types">Course types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/course_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/destination_types">Destination types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/destination_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/distances">Distances</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/distances/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/faq_category">FAQ Categories</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/faq_category/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/homestay_features">Homestay features</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/homestay_features/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/image_categories">Image categories</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/image_categories/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/market_regions">Market regions</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/market_regions/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/media_folders">Media Folders</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/media_folders/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/primary_goals">Primary goals</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/primary_goals/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/promotional_slot">Promotional slot</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/promotional_slot/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/recognised_qualifications">Recognised qualifications</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/recognised_qualifications/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/school_facilities">School facilities</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/school_facilities/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/start_levels">Start levels</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/start_levels/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/student_types">Student types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/student_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/study_spare_time_types">Study spare time types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/study_spare_time_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/tags">Tags</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/tags/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/team_types">Team types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/team_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/visa_category">Visa categories</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/visa_category/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/yl_school_activities">Young Learners school activities</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/yl_school_activities/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/structure/context">السياق</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/structure/context/add">إضافة</a></li>
+										<li><a href="/ar/admin/structure/context/settings">الإعدادات</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/structure/menu">القوائم</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/structure/menu/add">أضف قائمة</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/features">Features</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/features/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/features/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/features/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/features/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/menu-follow-us">Follow Us</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/menu-follow-us/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-follow-us/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-follow-us/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-follow-us/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/menu-landing">Landing</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/menu-landing/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-landing/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-landing/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-landing/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/language-selector">Language Selector</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/language-selector/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/language-selector/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/language-selector/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/language-selector/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/main-menu">Main menu</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/main-menu/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/main-menu/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/main-menu/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/main-menu/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/management">Management</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/management/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/management/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/management/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/management/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/menu-mega-menu">Mega menu</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/menu-mega-menu/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-mega-menu/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-mega-menu/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-mega-menu/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/navigation">Navigation</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/navigation/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/navigation/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/navigation/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/navigation/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/menu-useful-links">Useful Links</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/menu-useful-links/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-useful-links/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-useful-links/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-useful-links/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/user-menu">User menu</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/user-menu/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/user-menu/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/user-menu/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/user-menu/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li><a href="/ar/admin/structure/menu/settings">الإعدادات</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/translation">Translation sets</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/translation/add">Add translation</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/commerce">المتجر</a>
+							<ul class="dropdown">
+								<li><a href="/ar/admin/commerce/products">المنتجات</a></li>
+								<li class="expandable">
+									<a href="/ar/admin/commerce/products/add">إضافة منتج</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/commerce/products/add/accommodation">Create Accommodation</a></li>
+										<li><a href="/ar/admin/commerce/products/add/course">Create Course</a></li>
+										<li><a href="/ar/admin/commerce/products/add/fee">Create Fee</a></li>
+										<li><a href="/ar/admin/commerce/products/add/homestay">Create Homestay</a></li>
+										<li><a href="/ar/admin/commerce/products/add/insurance">Create Insurance</a></li>
+										<li><a href="/ar/admin/commerce/products/add/product">Create Product</a></li>
+										<li><a href="/ar/admin/commerce/products/add/transfer">Create Transfer</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/config">الإعدادات</a>
+							<ul class="dropdown">
+								<li class="expandable">
+									<a href="/ar/admin/config/people">الأشخاص</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/config/people/captcha">CAPTCHA</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/regional">الإقليمية واللغة</a>
+									<ul class="dropdown">
+										<li class="expandable">
+											<a href="/ar/admin/config/regional/translate">ترجمة الواجهة</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/regional/translate/translate">ترجمة</a></li>
+												<li class="expandable">
+													<a href="/ar/admin/config/regional/translate/translate-set">Translate set</a>
+													<ul class="dropdown">
+														<li><a href="/ar/admin/config/regional/translate/translate-set/manage-set">Manage set</a></li>
+														<li><a href="/ar/admin/config/regional/translate/translate-set/settings">الإعدادات</a></li>
+													</ul>
+												</li>
+												<li><a href="/ar/admin/config/regional/translate/i18n_string">Strings</a></li>
+												<li><a href="/ar/admin/config/regional/translate/import">استيراد</a></li>
+												<li><a href="/ar/admin/config/regional/translate/update">تحديث</a></li>
+												<li><a href="/ar/admin/config/regional/translate/export">تصدير</a></li>
+											</ul>
+										</li>
+										<li><a href="/ar/admin/config/regional/currencies">Currency Converter Rates</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/config/regional/countries">الدول</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/regional/countries/add">Add country</a></li>
+												<li><a href="/ar/admin/config/regional/countries/import">Update countries</a></li>
+												<li><a href="/ar/admin/config/regional/countries/layouts">Layouts</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/search">البحث والبيانات الفوقية</a>
+									<ul class="dropdown">
+										<li class="expandable">
+											<a href="/ar/admin/config/search/path">بدائل المسارات</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/search/path/add">أضف بديلا</a></li>
+												<li><a href="/ar/admin/config/search/path/update_bulk">Bulk generate</a></li>
+												<li><a href="/ar/admin/config/search/path/delete_bulk">Delete aliases</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/config/search/metatags">Metatag</a>
+											<ul class="dropdown">
+												<li class="expandable">
+													<a href="/ar/admin/config/search/metatags/context">By path</a>
+													<ul class="dropdown">
+														<li><a href="/ar/admin/config/search/metatags/context/add">Add a meta tag by path</a></li>
+													</ul>
+												</li>
+												<li><a href="/ar/admin/config/search/metatags/settings">الإعدادات</a></li>
+												<li><a href="/ar/admin/config/search/metatags/bulk-revert">Bulk revert</a></li>
+											</ul>
+										</li>
+										<li><a href="/ar/admin/config/search/robotstxt">RobotsTxt</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/config/search/redirect">URL redirects</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/search/redirect/add">Add redirect</a></li>
+												<li><a href="/ar/admin/config/search/redirect/generate">Generate redirects</a></li>
+												<li><a href="/ar/admin/config/search/redirect/settings">الإعدادات</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/config/search/xmlsitemap">XML خريطة الموقع</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/search/xmlsitemap/add">Add new XML sitemap</a></li>
+												<li class="expandable">
+													<a href="/ar/admin/config/search/xmlsitemap/custom">Custom links</a>
+													<ul class="dropdown">
+														<li><a href="/ar/admin/config/search/xmlsitemap/custom/add">Add custom link</a></li>
+													</ul>
+												</li>
+												<li><a href="/ar/admin/config/search/xmlsitemap/settings">الإعدادات</a></li>
+												<li><a href="/ar/admin/config/search/xmlsitemap/rebuild">Rebuild links</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/development">التنمية</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/config/development/generate/content">Generate content</a></li>
+										<li><a href="/ar/admin/config/development/generate/file">Generate files</a></li>
+										<li><a href="/ar/admin/config/development/generate/menu">Generate menus</a></li>
+										<li><a href="/ar/admin/config/development/generate/redirects">Generate redirects</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/system">النظام</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/config/system/kis-settings">KIS settings</a></li>
+										<li><a href="/ar/admin/config/system/eu-cookie-compliance">EU Cookie Compliance</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/media">ميديا</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/config/media/browser">Media browser settings</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/user-interface">واجهة المستخدم</a>
+									<ul class="dropdown">
+										<li class="expandable">
+											<a href="/ar/admin/config/user-interface/shortcut">الاختصارات</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/user-interface/shortcut/add-set">إضافة مجموعة اختصارات</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul id="admin-menu-menu-responsive" class="dropdown">
+						<li class="admin-menu-icon admin-menu-toolbar-home-menu expandable">
+							<a href="/ar"><span class="admin-menu-home-icon">&nbsp;</span></a>
+							<ul class="dropdown">
+								<li><a href="/ar/admin/index">الفهرس</a></li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/workbench">My Workbench</a>
+							<ul class="dropdown">
+								<li class="expandable">
+									<a href="/ar/admin/workbench/create">أنشئ محتوى</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/workbench/create/node/add/accreditation">Accreditation</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/course">Course</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/course-type">Course type</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/education-advisor">Education advisor</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/faq">FAQ</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/hub">Hub</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/image">Image</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/kaplan-office">Kaplan office</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/promotional">Promotional content</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/school">School</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/table-of-content">Table of Content</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/student-testimonial">Testimonial</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/visa">Visa</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/webform">Webform</a></li>
+										<li><a href="/ar/admin/workbench/create/node/add/page">Webpage</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/workbench/drafts">My drafts</a></li>
+								<li><a href="/ar/admin/workbench/needs-review">Needs review</a></li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/content">المحتوى:</a>
+							<ul class="dropdown">
+								<li class="expandable">
+									<a href="/ar/block/add">Add Block</a>
+									<ul class="dropdown">
+										<li><a href="/ar/block/add/content-block">Content  block</a></li>
+										<li><a href="/ar/block/add/cta-block">CTA block</a></li>
+										<li><a href="/ar/block/add/trustpilot-block">Trustpilot block</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/content/content-lock-overview">Content Lock Overview</a></li>
+								<li class="expandable">
+									<a href="/ar/admin/content/reports/content-overview/extra">Extra</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/reports/content-overview">Content Overview</a></li>
+										<li><a href="/ar/admin/reports/school-courses-overview">School Courses Overview</a></li>
+										<li><a href="/ar/admin/content/reports/accommodation/homestay-content">Homestay Overview</a></li>
+										<li><a href="/ar/admin/content/reports/accommodation/homestay-products">Homestay Products</a></li>
+										<li><a href="/ar/admin/content/reports/accommodation/residence-content">Residence Overview</a></li>
+										<li><a href="/ar/admin/content/reports/accommodation/residence-products">Residence Products</a></li>
+										<li><a href="/ar/admin/reports/product-updates">Product and Price Updates</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/content/faq_visa">FAQ &amp; VISA</a></li>
+								<li><a href="/ar/admin/content/webform">Webforms</a></li>
+								<li class="expandable">
+									<a href="/ar/node/add">إضافة محتوى</a>
+									<ul class="dropdown">
+										<li><a href="/ar/node/add/accreditation">Accreditation</a></li>
+										<li><a href="/ar/node/add/course">Course</a></li>
+										<li><a href="/ar/node/add/course-type">Course type</a></li>
+										<li><a href="/ar/node/add/education-advisor">Education advisor</a></li>
+										<li><a href="/ar/node/add/faq">FAQ</a></li>
+										<li><a href="/ar/node/add/hub">Hub</a></li>
+										<li><a href="/ar/node/add/image">Image</a></li>
+										<li><a href="/ar/node/add/kaplan-office">Kaplan office</a></li>
+										<li><a href="/ar/node/add/promotional">Promotional content</a></li>
+										<li><a href="/ar/node/add/school">School</a></li>
+										<li><a href="/ar/node/add/table-of-content">Table of Content</a></li>
+										<li><a href="/ar/node/add/student-testimonial">Testimonial</a></li>
+										<li><a href="/ar/node/add/visa">Visa</a></li>
+										<li><a href="/ar/node/add/webform">Webform</a></li>
+										<li><a href="/ar/node/add/page">Webpage</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/content/taxonomy">التصنيف</a></li>
+								<li><a href="/ar/admin/content/blocks">الصناديق</a></li>
+								<li class="expandable">
+									<a href="/ar/admin/content/file">الملفات</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/content/file/generate">Generate files</a></li>
+										<li><a href="/ar/admin/content/file/thumbnails">Thumbnails</a></li>
+									</ul>
+								</li>
+								<li><a href="/ar/admin/content/content_lock">Locked documents</a></li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/structure">الهيكلية</a>
+							<ul class="dropdown">
+								<li class="expandable">
+									<a href="/ar/admin/structure/crumbs">Crumbs</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/structure/crumbs/display">العرض</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/crumbs/entity-parent">Entity parent</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/crumbs/entity-parent/taxonomy-term">التصنيف</a></li>
+												<li><a href="/ar/admin/structure/crumbs/entity-parent/user">المستخدم</a></li>
+											</ul>
+										</li>
+										<li><a href="/ar/admin/structure/crumbs/debug">تنقيح</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/structure/taxonomy">التصنيف</a>
+									<ul class="dropdown">
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/facilities">Accommodation facilities</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/facilities/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/destination_activities">City activities</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/destination_activities/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/course_types">Course types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/course_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/destination_types">Destination types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/destination_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/distances">Distances</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/distances/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/faq_category">FAQ Categories</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/faq_category/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/homestay_features">Homestay features</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/homestay_features/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/image_categories">Image categories</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/image_categories/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/market_regions">Market regions</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/market_regions/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/media_folders">Media Folders</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/media_folders/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/primary_goals">Primary goals</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/primary_goals/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/promotional_slot">Promotional slot</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/promotional_slot/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/recognised_qualifications">Recognised qualifications</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/recognised_qualifications/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/school_facilities">School facilities</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/school_facilities/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/start_levels">Start levels</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/start_levels/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/student_types">Student types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/student_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/study_spare_time_types">Study spare time types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/study_spare_time_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/tags">Tags</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/tags/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/team_types">Team types</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/team_types/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/visa_category">Visa categories</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/visa_category/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/taxonomy/yl_school_activities">Young Learners school activities</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/taxonomy/yl_school_activities/add">إضافة مصطلح</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/structure/context">السياق</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/structure/context/add">إضافة</a></li>
+										<li><a href="/ar/admin/structure/context/settings">الإعدادات</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/structure/menu">القوائم</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/structure/menu/add">أضف قائمة</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/features">Features</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/features/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/features/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/features/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/features/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/menu-follow-us">Follow Us</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/menu-follow-us/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-follow-us/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-follow-us/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-follow-us/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/menu-landing">Landing</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/menu-landing/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-landing/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-landing/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-landing/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/language-selector">Language Selector</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/language-selector/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/language-selector/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/language-selector/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/language-selector/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/main-menu">Main menu</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/main-menu/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/main-menu/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/main-menu/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/main-menu/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/management">Management</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/management/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/management/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/management/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/management/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/menu-mega-menu">Mega menu</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/menu-mega-menu/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-mega-menu/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-mega-menu/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-mega-menu/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/navigation">Navigation</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/navigation/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/navigation/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/navigation/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/navigation/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/menu-useful-links">Useful Links</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/menu-useful-links/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-useful-links/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-useful-links/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/menu-useful-links/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/user-menu">User menu</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/user-menu/add">إضافة رابط</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/user-menu/delete">احذف القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/user-menu/edit">تحرير القائمة</a></li>
+												<li><a href="/ar/admin/structure/menu/manage/user-menu/translate">ترجمة</a></li>
+											</ul>
+										</li>
+										<li><a href="/ar/admin/structure/menu/settings">الإعدادات</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/structure/menu/manage/translation">Translation sets</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/structure/menu/manage/translation/add">Add translation</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/commerce">المتجر</a>
+							<ul class="dropdown">
+								<li><a href="/ar/admin/commerce/products">المنتجات</a></li>
+								<li class="expandable">
+									<a href="/ar/admin/commerce/products/add">إضافة منتج</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/commerce/products/add/accommodation">Create Accommodation</a></li>
+										<li><a href="/ar/admin/commerce/products/add/course">Create Course</a></li>
+										<li><a href="/ar/admin/commerce/products/add/fee">Create Fee</a></li>
+										<li><a href="/ar/admin/commerce/products/add/homestay">Create Homestay</a></li>
+										<li><a href="/ar/admin/commerce/products/add/insurance">Create Insurance</a></li>
+										<li><a href="/ar/admin/commerce/products/add/product">Create Product</a></li>
+										<li><a href="/ar/admin/commerce/products/add/transfer">Create Transfer</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-menu-toolbar-category expandable">
+							<a href="/ar/admin/config">الإعدادات</a>
+							<ul class="dropdown">
+								<li class="expandable">
+									<a href="/ar/admin/config/people">الأشخاص</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/config/people/captcha">CAPTCHA</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/regional">الإقليمية واللغة</a>
+									<ul class="dropdown">
+										<li class="expandable">
+											<a href="/ar/admin/config/regional/translate">ترجمة الواجهة</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/regional/translate/translate">ترجمة</a></li>
+												<li class="expandable">
+													<a href="/ar/admin/config/regional/translate/translate-set">Translate set</a>
+													<ul class="dropdown">
+														<li><a href="/ar/admin/config/regional/translate/translate-set/manage-set">Manage set</a></li>
+														<li><a href="/ar/admin/config/regional/translate/translate-set/settings">الإعدادات</a></li>
+													</ul>
+												</li>
+												<li><a href="/ar/admin/config/regional/translate/i18n_string">Strings</a></li>
+												<li><a href="/ar/admin/config/regional/translate/import">استيراد</a></li>
+												<li><a href="/ar/admin/config/regional/translate/update">تحديث</a></li>
+												<li><a href="/ar/admin/config/regional/translate/export">تصدير</a></li>
+											</ul>
+										</li>
+										<li><a href="/ar/admin/config/regional/currencies">Currency Converter Rates</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/config/regional/countries">الدول</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/regional/countries/add">Add country</a></li>
+												<li><a href="/ar/admin/config/regional/countries/import">Update countries</a></li>
+												<li><a href="/ar/admin/config/regional/countries/layouts">Layouts</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/search">البحث والبيانات الفوقية</a>
+									<ul class="dropdown">
+										<li class="expandable">
+											<a href="/ar/admin/config/search/path">بدائل المسارات</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/search/path/add">أضف بديلا</a></li>
+												<li><a href="/ar/admin/config/search/path/update_bulk">Bulk generate</a></li>
+												<li><a href="/ar/admin/config/search/path/delete_bulk">Delete aliases</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/config/search/metatags">Metatag</a>
+											<ul class="dropdown">
+												<li class="expandable">
+													<a href="/ar/admin/config/search/metatags/context">By path</a>
+													<ul class="dropdown">
+														<li><a href="/ar/admin/config/search/metatags/context/add">Add a meta tag by path</a></li>
+													</ul>
+												</li>
+												<li><a href="/ar/admin/config/search/metatags/settings">الإعدادات</a></li>
+												<li><a href="/ar/admin/config/search/metatags/bulk-revert">Bulk revert</a></li>
+											</ul>
+										</li>
+										<li><a href="/ar/admin/config/search/robotstxt">RobotsTxt</a></li>
+										<li class="expandable">
+											<a href="/ar/admin/config/search/redirect">URL redirects</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/search/redirect/add">Add redirect</a></li>
+												<li><a href="/ar/admin/config/search/redirect/generate">Generate redirects</a></li>
+												<li><a href="/ar/admin/config/search/redirect/settings">الإعدادات</a></li>
+											</ul>
+										</li>
+										<li class="expandable">
+											<a href="/ar/admin/config/search/xmlsitemap">XML خريطة الموقع</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/search/xmlsitemap/add">Add new XML sitemap</a></li>
+												<li class="expandable">
+													<a href="/ar/admin/config/search/xmlsitemap/custom">Custom links</a>
+													<ul class="dropdown">
+														<li><a href="/ar/admin/config/search/xmlsitemap/custom/add">Add custom link</a></li>
+													</ul>
+												</li>
+												<li><a href="/ar/admin/config/search/xmlsitemap/settings">الإعدادات</a></li>
+												<li><a href="/ar/admin/config/search/xmlsitemap/rebuild">Rebuild links</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/development">التنمية</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/config/development/generate/content">Generate content</a></li>
+										<li><a href="/ar/admin/config/development/generate/file">Generate files</a></li>
+										<li><a href="/ar/admin/config/development/generate/menu">Generate menus</a></li>
+										<li><a href="/ar/admin/config/development/generate/redirects">Generate redirects</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/system">النظام</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/config/system/kis-settings">KIS settings</a></li>
+										<li><a href="/ar/admin/config/system/eu-cookie-compliance">EU Cookie Compliance</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/media">ميديا</a>
+									<ul class="dropdown">
+										<li><a href="/ar/admin/config/media/browser">Media browser settings</a></li>
+									</ul>
+								</li>
+								<li class="expandable">
+									<a href="/ar/admin/config/user-interface">واجهة المستخدم</a>
+									<ul class="dropdown">
+										<li class="expandable">
+											<a href="/ar/admin/config/user-interface/shortcut">الاختصارات</a>
+											<ul class="dropdown">
+												<li><a href="/ar/admin/config/user-interface/shortcut/add-set">إضافة مجموعة اختصارات</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="admin-menu-action admin-menu-account"><a href="/ar/users/joungminshin">joungmin_shin</a></li>
+						<li class="admin-menu-action"><a href="/ar/user/logout">خروج</a></li>
+					</ul>
+					<div id="admin-menu-shortcuts-responsive">
+						<div class="toolbar-shortcuts">
+							<ul class="menu nav">
+								<li class="first leaf"><a href="/ar/node/add">إضافة محتوى</a></li>
+								<li class="leaf"><a href="/ar/admin/content">Find content</a></li>
+								<li class="leaf"><a href="/ar/admin/content/blocks">Blocks</a></li>
+								<li class="leaf"><a href="/ar/admin/structure">الهيكلية</a></li>
+								<li class="leaf"><a href="/ar/admin/config/people">الأشخاص</a></li>
+								<li class="leaf"><a href="/ar/file/add">Add file</a></li>
+								<li class="last leaf"><a href="/ar/admin/config/regional/currencies">Currency Converter</a></li>
+							</ul>
+						</div>
+						<a href="/ar/admin/config/user-interface/shortcut/shortcut-set-1" id="edit-shortcuts">تحرير الاختصارات</a>
+					</div>
+					<ul id="admin-menu-account" class="dropdown">
+						<li class="admin-menu-action"><a href="/ar/user/logout">خروج</a></li>
+						<li class="admin-menu-action admin-menu-account"><a href="/ar/users/joungminshin">joungmin_shin</a></li>
+					</ul>
+					<div class="shortcut-toolbar">
+						<div id="toolbar">
+							<div class="toolbar-shortcuts">
+								<ul class="menu nav">
+									<li class="first leaf"><a href="/ar/node/add">إضافة محتوى</a></li>
+									<li class="leaf"><a href="/ar/admin/content">Find content</a></li>
+									<li class="leaf"><a href="/ar/admin/content/blocks">Blocks</a></li>
+									<li class="leaf"><a href="/ar/admin/structure">الهيكلية</a></li>
+									<li class="leaf"><a href="/ar/admin/config/people">الأشخاص</a></li>
+									<li class="leaf"><a href="/ar/file/add">Add file</a></li>
+									<li class="last leaf"><a href="/ar/admin/config/regional/currencies">Currency Converter</a></li>
+								</ul>
+							</div>
+							<a href="/ar/admin/config/user-interface/shortcut/shortcut-set-1" id="edit-shortcuts">تحرير الاختصارات</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				<!--//--><![CDATA[//><!--
+				window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/3.1/jquery.min.js'>\x3C/script>")
+				//--><!]]>
+			</script>
+			<script type="text/javascript" src="/profiles/base_drupal_build/themes/kis_theme/js/bootstrap-3.4-dev/bootstrap.min.js"></script>
+			<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular.min.js"></script>
+			<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular-animate.min.js"></script>
+			<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular-cookies.min.js"></script>
+			<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.0/ui-bootstrap-tpls.min.js"></script>
+			<script type="text/javascript">
+				<!--//--><![CDATA[//><!--
+				jQuery.migrateMute=true;jQuery.migrateTrace=false;
+				//--><!]]>
+			</script>
+			<script type="text/javascript" src="https://cdn.kaplaninternational.com/sites/default/files/advagg_js/js__lujzZrM13uSDFLcAQBGxEMKZ6pOsoY0jeOR4T3La6-I__-14OY8pns4C5saZr-yMsGnRRHctaCLDgqe1rQsejciY__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.js"></script>
+			<script type="text/javascript">
+				<!--//--><![CDATA[//><!--
+				var eu_cookie_compliance_cookie_name = "";
+				//--><!]]>
+			</script>
+			<script type="text/javascript" src="https://cdn.kaplaninternational.com/sites/default/files/advagg_js/js__suN3Xgjzd2dIMM2eGL44ItKYAERaO5pXAE4Ivgp9LOY__UrqXKlZMYOmTs3T_NkYfkY-H3sdxilqeTPaZj4GwyP4__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.js"></script>
+			<script type="text/javascript">
+				<!--//--><![CDATA[//><!--
+				jQuery(function($) { $("input, textarea").placeholder();});
+				//--><!]]>
+			</script>
+			<script type="text/javascript" src="https://cdn.kaplaninternational.com/sites/default/files/advagg_js/js__PxLDMhKipUmYvXLKyQjZTQnIwILcFkN9ax-WnpPBEM4__H56F9Sa4ltHdo2O90d7aDdFG46-MLUz2qWMPc3T4Lq0__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.js"></script>
+			<script type="text/javascript">
+				<!--//--><![CDATA[//><!--
+				jQuery.extend(Drupal.settings, { "pathToTheme": "profiles/base_drupal_build/themes/kis_theme" });
+				//--><!]]>
+			</script>
+			<script type="text/javascript" src="https://cdn.kaplaninternational.com/sites/default/files/advagg_js/js__NhHs5HyBFFEDJsp4fzpFLG0YD5e3Fe4NuTsqSDlpNAY__aAlmF7wqy97GUpzmH6rYO9p8FJ0eDNf0FCNHSd9zbiM__J_VklC-jwSYDDR44np8xvQHpM8ZeI2gCNMCD5DtD9gI.js"></script>
+			<script type="text/javascript">
+				<!--//--><![CDATA[//><!--
+				jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"ar\/","ajaxPageState":{"theme":"kis_theme","theme_token":"cD1UT3I2PVu7PMcbxa2MAtAlM6vgGATEcVUiBpBD3sM","jquery_version":"3.1","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.base-rtl.css":1,"modules\/contextual\/contextual.css":1,"modules\/contextual\/contextual-rtl.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date-rtl.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/field\/theme\/field-rtl.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/views\/css\/views-rtl.css":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu.css":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu-rtl.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/adminimal_admin_menu\/adminimal_admin_menu.css":1,"sites\/all\/modules\/contrib\/adminimal_admin_menu\/js\/slicknav\/slicknav.css":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/css\/eu_cookie_compliance.bare.css":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/css\/eu_cookie_compliance.bare-rtl.css":1,"modules\/shortcut\/shortcut.css":1,"modules\/shortcut\/shortcut-rtl.css":1,"profiles\/base_drupal_build\/modules\/kis_multilingual_feature\/css\/kis_geolocation.css":1,"sites\/all\/modules\/contrib\/workbench\/css\/workbench.block.css":1,"profiles\/base_drupal_build\/themes\/kis_theme\/css\/style.css":1},"js":{"\/\/code.jquery.com\/jquery-3.1.1.min.js":1,"\/\/cdn.optimizely.com\/js\/4238035597.js":1,"\/profiles\/base_drupal_build\/themes\/kis_theme\/js\/bootstrap-3.4-dev\/bootstrap.min.js":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular.js\/1.6.7\/angular.min.js":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular.js\/1.6.7\/angular-animate.min.js":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular.js\/1.6.7\/angular-cookies.min.js":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/angular-ui-bootstrap\/0.14.0\/ui-bootstrap-tpls.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/3\/jquery-migrate.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"modules\/contextual\/contextual.js":1,"misc\/form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu.js":1,"public:\/\/languages\/ar_yhbX54oG-56gFivD1LR8k2zlsVmDa9UV1wh3L9MTkpk.js":1,"profiles\/base_drupal_build\/modules\/kis_bootstrap_modal\/kis_bootstrap_modal.js":1,"profiles\/base_drupal_build\/modules\/kis_marketing\/kis_marketing.js":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"profiles\/base_drupal_build\/modules\/kis_feature\/js\/commands.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie.js":1,"profiles\/base_drupal_build\/modules\/kis_multilingual_feature\/js\/kis_geolocation.js":1,"sites\/all\/themes\/contrib\/bootstrap\/js\/misc\/_progress.js":1,"sites\/all\/libraries\/modernizr\/modernizr.js":1,"sites\/all\/libraries\/chosen\/chosen.jquery.min.js":1,"sites\/all\/libraries\/jquery-match-height\/dist\/jquery.matchHeight-min.js":1,"sites\/all\/libraries\/masonry\/dist\/masonry.pkgd.min.js":1,"sites\/all\/libraries\/bootstrap-tabcollapse\/bootstrap-tabcollapse.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/tabs_table.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/accordion.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/app\/modules\/common.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/app\/modules\/search_form.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/app\/modules\/quote_details.js":1,"sites\/all\/libraries\/placeholder\/jquery.placeholder.min.js":1,"sites\/all\/libraries\/es5shim\/es5-shim.min.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/kie-custom.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/lazyload.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/contact_page.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/app\/modules\/about_us.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/app\/app.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/forms.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/carousel.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/search_filters.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/table_of_contents.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/scroll_to_top.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/mega_nav.js":1,"profiles\/base_drupal_build\/modules\/kis_country_content_type\/js\/toggle-phone-number.js":1,"sites\/all\/modules\/contrib\/field_group\/field_group.js":1,"sites\/all\/modules\/contrib\/adminimal_admin_menu\/js\/jquery.min.js":1,"sites\/all\/modules\/contrib\/adminimal_admin_menu\/js\/slicknav\/jquery-no-conflict.slicknav.js":1,"sites\/all\/modules\/contrib\/adminimal_admin_menu\/js\/adminimal_admin_menu.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/mobile-device-detector.js":1,"sites\/all\/themes\/contrib\/bootstrap\/js\/misc\/ajax.js":1,"sites\/all\/themes\/contrib\/bootstrap\/js\/bootstrap.js":1,"profiles\/base_drupal_build\/themes\/kis_theme\/js\/ie-autocomplete.js":1,"profiles\/base_drupal_build\/modules\/kis_quote\/js\/kis_quote.js":1}},"kis_bootstrap_modal":{"TBtrigger":".kis_bootstrap_modal","TBmodule":"profiles\/base_drupal_build\/modules\/kis_bootstrap_modal","TBpath":"\/"},"searchData":{"destination_activities":[{"tid":"54","name":"\u0627\u0644\u062a\u0633\u0648\u0642"},{"tid":"201","name":"\u0627\u0644\u0637\u0639\u0627\u0645 \u0648\u0627\u0644\u0634\u0631\u0627\u0628"},{"tid":"56","name":"\u0627\u0644\u0631\u064a\u0627\u0636\u0629"},{"tid":"55","name":"\u0627\u0644\u0633\u0647\u0631\u0627\u062a"},{"tid":"57","name":"\u0627\u0644\u0646\u0634\u0627\u0637\u0627\u062a \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629"},{"tid":"58","name":"\u0627\u0644\u062d\u064a\u0627\u0629 \u0627\u0644\u0628\u0631\u064a\u0629"},{"tid":"59","name":"\u0627\u0644\u062a\u0627\u0631\u064a\u062e"},{"tid":"60","name":"\u0627\u0644\u0641\u0646 \u0648\u0627\u0644\u0645\u0633\u0631\u062d"}],"student_types":[{"field_course_type":[-1,"75","26","77"],"tid":"69","name":"\u0628\u064a\u0646 16-18 \u0633\u0646\u0629"},{"field_course_type":[-1,"75","26","76","77","78"],"tid":"70","name":"\u0637\u0627\u0644\u0628 \u062c\u0627\u0645\u0639\u064a"},{"field_course_type":[-1,"75","26","76","77","78"],"tid":"71","name":"\u062f\u0631\u0627\u0633\u0627\u062a \u0639\u0644\u064a\u0627"},{"field_course_type":"78","tid":"73","name":"\u0637\u0644\u0627\u0628 \u0645\u0648\u0638\u0641\u0648\u0646 \u0628\u064a\u0646 \u0633\u0646 25 - 40 \u0633\u0646\u0629"},{"field_course_type":[-1,"75","26","76","77","78"],"tid":"74","name":"\u0641\u0648\u0642 \u0633\u0646 \u0627\u0644\u0640 40 \u0639\u0627\u0645\u0627\u064b"}],"course_types":[{"tid":-1,"name":"\u0639\u0631\u0636 \u0643\u0644"},{"tid":"75","name":"\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629 \u0627\u0644\u0639\u0627\u0645\u0629","field_student_type":{"69":"69","70":"70","71":"71","73":"73","74":"74"},"field_course_type_countries":{"207":"207","208":"208","209":"209","210":"210","211":"211","212":"212","425":"425"},"field_start_months":{"1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","10":"10","11":"11","12":"12"},"field_course_type_durations":{"2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","10":"10","11":"11","12":"12","13":"13","14":"14","15":"15","16":"16","17":"17","18":"18","19":"19","20":"20","21":"21","22":"22","23":"23","24":"24","25":"25","26":"26","27":"27","28":"28","29":"29","30":"30","31":"31","32":"32","33":"33","34":"34","35":"35","36":"36","37":"37","38":"38","39":"39","40":"40","41":"41","42":"42","43":"43","44":"44","45":"45","46":"46","47":"47","48":"48","49":"49","50":"50","51":"51","52":"52"}},{"tid":"26","name":"\u062f\u0648\u0631\u0627\u062a \u0630\u0627\u062a \u0623\u0645\u062f \u0637\u0648\u064a\u0644","field_student_type":{"69":"69","70":"70","71":"71","73":"73","74":"74"},"field_course_type_countries":{"207":"207","208":"208","209":"209","210":"210","211":"211","212":"212"},"field_start_months":{"1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","9":"9","10":"10"},"field_course_type_durations":{"10":"10","20":"20","21":"21","22":"22","23":"23","24":"24","32":"32"}},{"tid":"76","name":"\u062f\u0648\u0631\u0627\u062a \u0627\u0646\u062c\u0644\u064a\u0632\u064a \u0644\u0644\u0623\u0639\u0645\u0627\u0644","field_student_type":{"70":"70","71":"71","73":"73","74":"74"},"field_course_type_countries":{"207":"207","208":"208","209":"209","210":"210","211":"211","212":"212"},"field_start_months":{"1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","10":"10","11":"11","12":"12"},"field_course_type_durations":{"2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","10":"10","11":"11","12":"12","13":"13","14":"14","15":"15","16":"16","17":"17","18":"18","19":"19","20":"20","21":"21","22":"22","23":"23","24":"24","25":"25","26":"26","27":"27","28":"28","29":"29","30":"30","31":"31","32":"32","33":"33","34":"34","35":"35","36":"36","37":"37","38":"38","39":"39","40":"40","41":"41","42":"42","43":"43","44":"44","45":"45","46":"46","47":"47","48":"48","49":"49","50":"50","51":"51","52":"52"}},{"tid":"77","name":"\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u062a\u062d\u0636\u064a\u0631 \u0644\u0644\u0627\u0645\u062a\u062d\u0627\u0646\u0627\u062a","field_student_type":{"69":"69","70":"70","71":"71","73":"73","74":"74"},"field_course_type_countries":{"207":"207","208":"208","209":"209","210":"210","211":"211","212":"212"},"field_start_months":{"1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","10":"10","11":"11","12":"12"},"field_course_type_durations":{"2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","10":"10","11":"11","12":"12","13":"13","14":"14","15":"15","16":"16","17":"17","18":"18","19":"19","20":"20","21":"21","22":"22","23":"23","24":"24"}},{"tid":"498","name":"Corsi di aggiornamento per insegnanti","field_student_type":"73","field_course_type_countries":{"207":"207","208":"208"}},{"tid":"78","name":"\u062f\u0648\u0631\u0629 \u0625\u0646\u062c\u0644\u064a\u0632\u064a \u0645\u0639 \u0627\u0644\u0639\u0645\u0644","field_student_type":{"70":"70","71":"71","73":"73","74":"74"},"field_course_type_countries":{"209":"209","210":"210"},"field_start_months":{"1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","10":"10","11":"11","12":"12"},"field_course_type_durations":{"12":"12","13":"13","14":"14","15":"15","16":"16","17":"17","20":"20","24":"24","32":"32"}}],"destination_types":[{"tid":-1,"name":"\u0644\u0627 \u0645\u0627\u0646\u0639"},{"tid":"64","name":"\u0645\u062f\u064a\u0646\u0629 \u0635\u063a\u064a\u0631\u0629"},{"tid":"63","name":"\u0645\u062f\u064a\u0646\u0629 \u0643\u0628\u064a\u0631\u0629"},{"tid":"61","name":"\u0627\u0644\u0634\u0627\u0637\u0626"},{"tid":"62","name":"\u0627\u0644\u062d\u0631\u0645 \u0627\u0644\u062c\u0627\u0645\u0639\u064a"}],"distances":[{"tid":-1,"name":"\u0644\u0627 \u0645\u0627\u0646\u0639"},{"tid":"360","name":"1-10hrs"},{"tid":"361","name":"10-20hrs"},{"tid":"362","name":"\u003E20hrs"}],"primary_goals":[{"tid":"111","name":"\u0623\u0648\u062f \u062a\u0637\u0648\u064a\u0631 \u0645\u0633\u062a\u0642\u0628\u0644\u064a \u0627\u0644\u0645\u0647\u0646\u064a"},{"tid":"132","name":"\u0623\u0648\u062f \u0645\u0639\u0627\u064a\u0634\u0629 \u062b\u0642\u0627\u0641\u0627\u062a \u0623\u062e\u0631\u0649"},{"tid":"118","name":"\u0623\u0648\u062f \u0623\u0646 \u0623\u0633\u062a\u0645\u062a\u0639 \u0628\u0648\u0642\u062a\u064a"},{"tid":"107","name":"\u0623\u0648\u062f \u0641\u0642\u0637 \u0623\u0646 \u0623\u0643\u0648\u0646 \u0637\u0644\u064a\u0642 \u0627\u0644\u0644\u0633\u0627\u0646"},{"tid":"115","name":"\u0623\u062d\u062a\u0627\u062c\u0647\u0627 \u0644\u0639\u0645\u0644\u064a"},{"tid":"114","name":"\u0623\u062d\u062a\u0627\u062c\u0647\u0627 \u0644\u0644\u062c\u0627\u0645\u0639\u0629"},{"tid":"119","name":"\u0623\u0648\u062f \u0645\u0639\u0627\u064a\u0634\u0629 \u062b\u0642\u0627\u0641\u0627\u062a \u0623\u062e\u0631\u0649"}],"recognised_qualifications":[{"tid":"112","name":"\u0623\u0633\u0627\u0633\u064a"},{"tid":"113","name":"\u0647\u0627\u0645"},{"tid":"108","name":"\u0645\u0646 \u0627\u0644\u062c\u064a\u062f \u0623\u0646 \u062a\u062d\u0635\u0644 \u0639\u0644\u0649"}],"study_spare_time_types":[{"tid":"117","name":"\u0623\u0648\u062f \u0628\u0639\u0636\u0627\u064b \u0645\u0646 \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u062d\u0631 \u0644\u0646\u0641\u0633\u064a \u0648\u0644\u0643\u0646 \u0627\u0644\u062f\u0631\u0627\u0633\u0629 \u0647\u064a \u0623\u0647\u0645 \u0623\u0648\u0644\u0648\u064a\u0627\u062a\u064a"},{"tid":"120","name":"\u0623\u0648\u062f \u0628\u0639\u0636\u0627\u064b \u0645\u0646 \u0648\u0642\u062a \u0644\u0623\u0642\u0636\u064a\u0647 \u0641\u064a \u0627\u0644\u0646\u0632\u0647\u0627\u062a \u0648\u0627\u0644\u0627\u0633\u062a\u0643\u0634\u0627\u0641"},{"tid":"109","name":"\u0623\u0648\u062f \u0627\u0644\u062f\u0631\u0627\u0633\u0629 \u0641\u0642\u0637"}],"countries":[{"title":"\u0644\u0627 \u0645\u0627\u0646\u0639","value":-1,"iso2":-1,"city":null},{"title":"\u0628\u0631\u064a\u0637\u0627\u0646\u064a\u0627","value":"GB","iso2":"GB","country":"207","city":null},{"title":"\u062a\u0639\u0644\u0645 \u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629 \u0641\u064a \u0623\u0645\u0631\u064a\u0643\u0627","value":"US","iso2":"US","country":"212","city":null},{"title":"\u0643\u0646\u062f\u0627","value":"CA","iso2":"CA","country":"211","city":null},{"title":"\u0627\u064a\u0631\u0644\u0646\u062f\u0627","value":"IE","iso2":"IE","country":"208","city":null},{"title":"\u0623\u0633\u062a\u0631\u0627\u0644\u064a\u0627","value":"AU","iso2":"AU","country":"210","city":null},{"title":"\u0646\u064a\u0648\u0632\u064a\u0644\u0646\u062f\u0627","value":"NZ","iso2":"NZ","country":"209","city":null},{"title":"\u0628\u0648\u0633\u0637\u0646","value":"US243","iso2":"US","country":"212","city":"243"},{"title":"\u0634\u064a\u0643\u0627\u063a\u0648","value":"US244","iso2":"US","country":"212","city":"244"},{"title":"\u0644\u0648\u0633 \u0623\u0646\u062c\u0644\u0648\u0633 - \u0634\u0627\u0637\u0626 \u0647\u0646\u062a\u0646\u063a\u062a\u0648\u0646","value":"US434","iso2":"US","country":"212","city":"434"},{"title":"\u0644\u0648\u0633 \u0623\u0646\u062c\u0644\u0648\u0633","value":"US249","iso2":"US","country":"212","city":"249"},{"title":"\u0645\u064a\u0627\u0645\u064a","value":"US250","iso2":"US","country":"212","city":"250"},{"title":"\u0646\u064a\u0648\u064a\u0648\u0631\u0643","value":"US252","iso2":"US","country":"212","city":"252"},{"title":"\u0641\u064a\u0644\u0627\u062f\u0644\u0641\u064a\u0627","value":"US254","iso2":"US","country":"212","city":"254"},{"title":"\u0628\u0648\u0631\u062a\u0644\u0627\u0646\u062f","value":"US255","iso2":"US","country":"212","city":"255"},{"title":"\u0633\u0627\u0646 \u062f\u064a\u064a\u063a\u0648","value":"US256","iso2":"US","country":"212","city":"256"},{"title":"\u0633\u0627\u0646 \u0641\u0631\u0627\u0646\u0633\u064a\u0633\u0643\u0648","value":"US257","iso2":"US","country":"212","city":"257"},{"title":"\u0633\u0627\u0646\u062a\u0627 \u0628\u0627\u0631\u0628\u0627\u0631\u0627","value":"US258","iso2":"US","country":"212","city":"258"},{"title":"\u0633\u064a\u0627\u062a\u0644","value":"US259","iso2":"US","country":"212","city":"259"},{"title":"\u0648\u0627\u0634\u0646\u0637\u0646 \u062f\u064a \u0633\u064a","value":"US260","iso2":"US","country":"212","city":"260"},{"title":"\u062a\u0648\u0631\u0648\u0646\u062a\u0648","value":"CA227","iso2":"CA","country":"211","city":"227"},{"title":"\u0641\u0627\u0646\u0643\u0648\u0641\u0631","value":"CA228","iso2":"CA","country":"211","city":"228"},{"title":"\u0628\u0627\u062b","value":"GB229","iso2":"GB","country":"207","city":"229"},{"title":"\u0628\u0648\u0631\u0646\u0645\u0648\u062b","value":"GB230","iso2":"GB","country":"207","city":"230"},{"title":"\u0628\u0631\u0627\u064a\u062a\u0648\u0646","value":"GB231","iso2":"GB","country":"207","city":"231"},{"title":"\u0643\u0627\u0645\u0628\u0631\u064a\u062f\u062c","value":"GB232","iso2":"GB","country":"207","city":"232"},{"title":"\u0625\u062f\u0646\u0628\u0631\u0629","value":"GB233","iso2":"GB","country":"207","city":"233"},{"title":"\u0644\u064a\u0641\u0631\u0628\u0648\u0644","value":"GB234","iso2":"GB","country":"207","city":"234"},{"title":"\u0644\u0646\u062f\u0646","value":"GB235","iso2":"GB","country":"207","city":"235"},{"title":"\u0645\u0627\u0646\u0634\u0633\u062a\u0631","value":"GB236","iso2":"GB","country":"207","city":"236"},{"title":"\u0623\u0643\u0633\u0641\u0648\u0631\u062f","value":"GB237","iso2":"GB","country":"207","city":"237"},{"title":"\u0633\u0627\u0644\u0632\u0628\u0631\u064a","value":"GB238","iso2":"GB","country":"207","city":"238"},{"title":"\u062a\u0648\u0631\u0643\u064a","value":"GB239","iso2":"GB","country":"207","city":"239"},{"title":"\u062f\u0628\u0644\u0646","value":"IE240","iso2":"IE","country":"208","city":"240"},{"title":"\u0623\u062f\u064a\u0644\u0627\u064a\u062f","value":"AU221","iso2":"AU","country":"210","city":"221"},{"title":"\u0628\u0631\u064a\u0633\u0628\u0627\u0646","value":"AU222","iso2":"AU","country":"210","city":"222"},{"title":"\u0643\u064a\u0631\u0646\u0632","value":"AU223","iso2":"AU","country":"210","city":"223"},{"title":"\u0645\u0644\u0628\u0648\u0631\u0646","value":"AU224","iso2":"AU","country":"210","city":"224"},{"title":"\u0628\u064a\u0631\u062b","value":"AU225","iso2":"AU","country":"210","city":"225"},{"title":"\u0633\u064a\u062f\u0646\u064a","value":"AU226","iso2":"AU","country":"210","city":"226"},{"title":"\u0623\u0648\u0643\u0644\u0627\u0646\u062f","value":"NZ241","iso2":"NZ","country":"209","city":"241"},{"title":"\u0633\u0644\u064a\u0645\u0627 (closed not in use)","value":"MT436","iso2":"MT","country":"425","city":"436"},{"title":"\u0633\u0646\u063a\u0627\u0641\u0648\u0631\u0629","value":"SG435","iso2":"SG","country":"426","city":"435"}],"multiple_destinations":{"GB":false,"US":true,"CA":false,"IE":false,"AU":false,"NZ":false,"-1":true},"study_from":[{"label":"September 2019","value":"1909","month":"9"},{"label":"October 2019","value":"1910","month":"10"},{"label":"\u0646\u0648\u0641\u0645\u0628\u0631 2019","value":"1911","month":"11"},{"label":"\u062f\u064a\u0633\u0645\u0628\u0631 2019","value":"1912","month":"12"},{"label":"\u064a\u0646\u0627\u064a\u0631 2020","value":"2001","month":"1"},{"label":"\u0641\u0628\u0631\u0627\u064a\u0631 2020","value":"2002","month":"2"},{"label":"March 2020","value":"2003","month":"3"},{"label":"April 2020","value":"2004","month":"4"},{"label":"May 2020","value":"2005","month":"5"},{"label":"June 2020","value":"2006","month":"6"},{"label":"July 2020","value":"2007","month":"7"},{"label":"\u0623\u063a\u0633\u0637\u0633 2020","value":"2008","month":"8"}],"study_for_periods":[{"value":2,"label":"2 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":3,"label":"3 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":4,"label":"4 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":5,"label":"5 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":6,"label":"6 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":7,"label":"7 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":8,"label":"8 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":9,"label":"9 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":10,"label":"10 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":11,"label":"11 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":12,"label":"12 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":13,"label":"13 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":14,"label":"14 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":15,"label":"15 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":16,"label":"16 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":17,"label":"17 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":18,"label":"18 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":19,"label":"19 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":20,"label":"20 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":21,"label":"21 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":22,"label":"22 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":23,"label":"23 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":24,"label":"24 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":25,"label":"25 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":26,"label":"26 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":27,"label":"27 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":28,"label":"28 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":29,"label":"29 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":30,"label":"30 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":31,"label":"31 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":32,"label":"32 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":33,"label":"33 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":34,"label":"34 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":35,"label":"35 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":36,"label":"36 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":37,"label":"37 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":38,"label":"38 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":39,"label":"39 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":40,"label":"40 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":41,"label":"41 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":42,"label":"42 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":43,"label":"43 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":44,"label":"44 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":45,"label":"45 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":46,"label":"46 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":47,"label":"47 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":48,"label":"48 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":49,"label":"49 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":50,"label":"50 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":51,"label":"51 \u0623\u0633\u0627\u0628\u064a\u0639"},{"value":52,"label":"52 \u0623\u0633\u0627\u0628\u064a\u0639"}],"variables":[],"defaults":[]},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_scrolling_confirmation":0,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u0646\u062d\u0646 \u0646\u0633\u062a\u0639\u0645\u0644 \u0627\u0644\u0643\u0648\u0643\u064a\u0632 ( \u0645\u0644\u0641\u0627\u062a \u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u0627\u0631\u062a\u0628\u0627\u0637) \u0641\u064a \u0627\u0644\u0645\u0648\u0642\u0639 \u0644\u062a\u062d\u0635\u0644 \u0639\u0644\u0649 \u062e\u062f\u0645\u0629 \u0623\u0641\u0636\u0644 \u0645\u0646 \u0637\u0631\u0641\u0646\u0627. \u0625\u0630\u0627 \u0644\u0645 \u062a\u0645\u0627\u0646\u0639 \u0628\u0627\u0644\u0645\u0648\u0636\u0648\u0639 \u064a\u0645\u0643\u0646\u0643 \u0625\u0643\u0645\u0627\u0644 \u062a\u0635\u0641\u062d \u0627\u0644\u0645\u0648\u0642\u0639\u060c \u0623\u0648 \u003Ca href=\u0022\/ar\/privacy-promise-and-how-manage-cookies\u0022 target=\u0022_blank\u0022\u003E\u064a\u0645\u0643\u0646\u0643 \u0645\u0639\u0631\u0641\u0629 \u0627\u0644\u0645\u0632\u064a\u062f \u0639\u0646 \u0643\u064a\u0641\u064a\u0629 \u0627\u0644\u062a\u062d\u0643\u0645 \u0628\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0643\u0648\u0643\u064a\u0632.\u003C\/a\u003E \u00a0\u003Cbutton class=\u0022agree-button\u0022 type=\u0022button\u0022\u003E\u0634\u0643\u0631\u0627\u064b \u0644\u0625\u0639\u0644\u0627\u0645\u064a \u0628\u0627\u0644\u0645\u0648\u0636\u0648\u0639.\u003C\/button\u003E\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button\u0022\u003Ex\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button\u0022\u003Ex\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button\u0022\u003EHide\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":1,"popup_height":"auto","popup_width":0,"popup_delay":1000,"popup_link":"\/ar\/terms-and-conditions","popup_link_new_window":1,"popup_position":null,"popup_language":"ar","better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"100","disagree_do_not_show_popup":0},"kis_quote":{"api_key":"private_c1f84ca336d7f513226394fa9f0312ef","agency_id":1889,"language":"ar","country":"","tracking_id":"UA-15841185-3","js_url":"https:\/\/cdn.edvisor.io\/b2c\/edvisor-search.js","redirect_url":"\/ar\/quote\/results","loading_text":"\u062a\u062d\u0645\u064a\u0644...","show_residence_question":1,"require_phone_number":1,"custom_fields":[]},"currentCountryCode":"AE","urlIsAjaxTrusted":{"\/ar\/junior-language-courses":true,"\/ar":true,"\/ar\/newsletter-signup\/form":true},"field_group":{"div":"full"},"tableHeaderOffset":"Drupal.admin.height","admin_menu":{"destination":"destination=node\/3067","margin_top":1,"position_fixed":1},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});
+				//--><!]]>
+			</script>
+		</div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"4d1683e9d2","applicationID":"6355503","transactionName":"YgZXZkdQW0cCVhJdCltMdFFBWFpaTEUHUwBqDlRcVFZQRjxbCVAAahVcV0JuRVUEUA==","queueTime":0,"applicationTime":4350,"atts":"TkFUEA9KSEk=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+	</body>
+</html>
