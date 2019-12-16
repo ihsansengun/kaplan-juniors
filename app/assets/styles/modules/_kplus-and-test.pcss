@@ -1,0 +1,134 @@
+.kplus-and-test {
+
+	padding-bottom: 10%;
+	background-image: url('//assetlibs.kaplaninternational.com/_assets/english-test-intro/images/eng-test-hero-xs.jpg');
+
+	@mixin atSmall {
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/english-test-intro/images/eng-test-hero-xs.jpg');
+	}
+	@mixin atMedium {
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/english-test-intro/images/eng-test-hero-md.jpg');
+	}
+	@mixin atLarge {
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/english-test-intro/images/eng-test-hero-lg.jpg');
+	}
+
+	.section-inner-item {
+
+		h2.section-title {
+			margin-bottom: 0.75em;
+			font-size: 18px;
+			text-transform: uppercase;
+			text-align: center;
+			color: #202020;
+
+			@mixin atMedium {
+				font-size: 24px;
+				padding: 0 30px;
+			}
+
+		}
+
+		h3.section-subtitle {
+			max-width: 640px;
+			margin: 0 auto;
+			font-size: 14px;
+			line-height: 1.4;
+			color: #606060;
+			margin-bottom: 1.5em;
+
+			@mixin atMedium {
+				max-width: 960px;
+				font-size: 16px;
+				padding: 0 30px;
+			}
+		}
+
+		&.kplus-learning {
+			position: relative;
+			margin-bottom: 60px;
+			padding-left: 15px;
+			padding-right: 15px;
+
+			@mixin atMedium {
+			  margin-bottom: 6%;
+			}
+
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 50%;
+				top: 0;
+				left: 0;
+				background-color: #FFFFFF;
+			}
+			.kplus-learning-inner {
+				position: relative;
+				background-color: #FFFFFF;
+				padding: 30px;
+				box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+
+				@mixin atUpToMedium {
+					width: calc(100% - 15px);
+				}
+
+				@mixin atMedium {
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				@mixin atLarge {
+					width: 1140px;
+				}
+
+				.unique-approach__k-plus {
+					.kplus-prod-logo {
+						width: 128px;
+						padding: 6px 0;
+					}
+				}
+			}
+		}
+
+		&.level-test {
+			.level-test-inner {
+				h2.section-title,
+				h3.section-subtitle {
+					color: #FFFFFF;
+				}
+			}
+
+			.cta-container {
+				margin: 1em 0;
+				text-align: center;
+				a.btn {
+					max-width: 290px;
+					padding: 15px 25px;
+					margin: 3px 0;
+					background-color: #00A4D9;
+					line-height: 1.1;
+
+					@mixin atMedium {
+					  padding: 20px 30px;
+					}
+
+					&:hover,
+					&:focus {
+						background-color: #FFC82E;
+						color: #240F6E;
+					}
+					.btn-label {
+						font-size: 15px;
+						font-weight: bold;
+						
+						@mixin atMedium {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

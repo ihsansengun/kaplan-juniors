@@ -1,0 +1,149 @@
+.field-item {
+	.section-content {
+
+		&.section--english-camp-why-choose {
+			position: relative;
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/why-choose-bg.jpg');
+
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.2);
+				top: 0;
+				left: 0;
+			}
+
+			.english-camp-why-choose {
+				position: relative;
+				z-index: 1;
+				.section-head {
+
+					h2.title {
+						color: #FFFFFF;
+						font-weight: 700;
+						text-transform: uppercase;
+						text-align: center;
+						margin-bottom: 0.5em;
+						line-height: 1.1;
+						font-size: 22px;
+						@mixin sm-min { font-size: 26px; }
+						@mixin md-min { font-size: 28px; }
+						@mixin lg-min { font-size: 32px; }
+					}
+				}
+
+				.section-body {
+					.flex-container {
+						.flex-item {
+							flex: 0 0 100%;
+							max-width: 100%;
+
+							@mixin sm-min {
+								-ms-flex-preferred-size: 0;
+								flex-basis: 0;
+								-ms-flex-positive: 1;
+								flex-grow: 1;
+								flex: 0 0 50%;
+								max-width: 50%;
+							}
+							@mixin md-min {
+								flex: 0 0 25%;
+								max-width: 25%;
+							}
+
+
+							.item-inner {
+								._icon {
+									display: block;
+									margin: 0 auto;
+								}
+							}
+
+							.item-inner {
+								height: 100%;
+								margin: 0.25em 0;
+								/* background-color: rgba(0,0,0,.1); */
+
+								@mixin sm-min {
+									margin: 0;
+								}
+								@mixin md-min {
+									padding: 1% 2%;
+								}
+								
+								.icon {
+									display: block;
+									float: left;
+									width: 86px;
+									margin-right: 10px;
+
+									._icon {
+										display: block;
+										transform: scale(0.72);
+									}
+
+
+									@mixin sm-min {
+										float: none;
+										margin: 0 0 8px 0;
+										._icon {
+											transform: scale(0.86);
+										}
+									}
+									@mixin md-min {
+										margin: 0 auto 15px auto;
+									}
+
+								}
+								.title {
+									color: #FFF;
+									text-transform: uppercase;
+									font-size: 15px;
+									font-weight: 700;
+									margin-bottom: 0.25em;
+									overflow: hidden;
+									@mixin sm-min {
+										/* font-size: 15px; */
+									}
+									@mixin md-min {
+										font-size: 15px;
+										text-align: center;
+										min-height: 42px;
+									}
+									@mixin lg-min {
+										font-size: 16px;
+
+									}
+								}
+								.desc {
+									overflow: hidden;
+									font-size: 13px;
+									color: #FFF;
+									@mixin sm-min {
+										font-size: 13px;
+										hyphens: auto;
+									}
+									@mixin md-min {
+										font-size: 14px;
+										text-align: justify;
+										text-align-last: center;
+									}
+									@mixin lg-min {
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+

@@ -1,23 +1,25 @@
-
+#content .region-content {
+	width: 100%;
+}
 .wrapper:after {
-  clear: both
+	clear: both
 }
 
-@media (min-width:992px) {
-  .wrapper {
-    padding-left: 15px;
-    padding-right: 15px
-  }
+/* @media (min-width:992px) {
+	.wrapper {
+		padding-left: 15px;
+		padding-right: 15px
+	}
 
-}
+} */
 
 body,
 html {
-  direction: ltr;
-  color: #35771f;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #606060
+	direction: ltr;
+	color: #35771f;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #606060
 }
 
 *,
@@ -25,120 +27,118 @@ html {
 :before,
 body,
 html {
-  box-sizing: border-box
+	box-sizing: border-box
 }
 
 img {
-  max-width: 100%;
-  height: auto
+	max-width: 100%;
+	height: auto
 }
 
 a,
 a:hover {
-  color: #00a4d9
+	color: #00a4d9
 }
 
 .content {
-  margin-top: 0
+	margin-top: 0
 }
 
 
 
 .breadcrumb-container,
 .title-container {
-  display: none
+	display: none
 }
 
 #wrapper {
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
 
-  .node-hub {
-    .field-collection-container {
-      .field-collection-view {
-        padding: 0;
-      }
-    }
-  }
+	.node-hub {
+		.field-collection-container {
+			.field-collection-view {
+				padding: 0;
+			}
+		}
+	}
 
-  .view-mode-full {
-    .field-items {
-      .field-item {
-        section {
-          width: 100vw;
-          position: relative;
-          left: -o-calc(-50vw + 50%);
-          left: calc(-50vw + 50%);
+	.view-mode-full {
+		.field-items {
+			.field-item {
+				section {
+					width: 100vw;
+					position: relative;
+					left: -o-calc(-50vw + 50%);
+					left: calc(-50vw + 50%);
 
-          &:before,
-          &:after {
-            content: " ";
-            display: table;
-          }
+					&:before,
+					&:after {
+						content: " ";
+						display: table;
+					}
 
-          &.hero-banner {
-            padding-top: 0;
-          }
+					&.hero-banner {
+						padding-top: 0;
+					}
 
-
-          ._icon {
-            background-image: url(https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/sprites/sprite.svg);
-          }
-          .no-svg ._icon {
-            background-image: url(https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/sprites/sprite.png);
-          }
-
-
-
-
-          ul {
-            &.what-will-learn {
-              li {
-                &:before {
-                  content: none;
-                }
-                p {
-                  font-size: 13px;
-                  @mixin atMedium {
-                    font-size: 14px;
-                  }
-                  @mixin atLarge {
-                    font-size: 15px;
-                    line-height: 1.58;
-                  }
-                }
-              }
-            }
-          }
+					ul {
+						&.what-will-learn {
+							li {
+								&:before {
+									content: none;
+								}
+								p {
+									font-size: 13px;
+									@mixin atMedium {
+										font-size: 14px;
+									}
+									@mixin atLarge {
+										font-size: 15px;
+										line-height: 1.58;
+									}
+								}
+							}
+						}
+					}
 
 
 
-          &.course-box {
-            ul {
-              padding-left: 0;
-              padding-right: 0;
+					&.course-box {
+						ul {
+							padding-left: 0;
+							padding-right: 0;
 
-              &.course-box__col-2 {
-                max-width: 754px;
-                margin-left: auto;
-                margin-right: auto;
-              }
+							&.course-box__col-2 {
+								max-width: 754px;
+								margin-left: auto;
+								margin-right: auto;
+							}
 
-              &.course-box__col-2,
-              &.course-box__col-3 {
-                li {
-                  &:before {
-                    content: none;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+							&.course-box__col-2,
+							&.course-box__col-3 {
+								li {
+									&:before {
+										content: none;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				._icon {
+				  background-image: url(https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/sprites/sprite.svg);
+				  /* background-image: url(/assets/images/sprite.svg); */
+				}
+				.no-svg ._icon {
+				  background-image: url(https://assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/sprites/sprite.png);
+				  /* background-image: url(/assets/images/sprite.png); */
+				}
+			}
+		}
+	}
 }
 
 

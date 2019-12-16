@@ -1,0 +1,374 @@
+.field-item {
+	.section-content {
+		background-color: #F4F4F4;
+
+		&.section--english-camp-location {
+			
+			.english-camp-location {
+				.section-head {
+					margin-bottom: 2.5em;
+				}
+
+				.section-body {
+					/* background-color: rgba(0,0,0,0.1); */
+
+					.location-items {
+						margin-bottom: 2.5em;
+
+
+						input[type="radio"] {
+							visibility: hidden;
+							position: absolute;
+							left: -9999px;
+						}
+
+						span {
+							&.flag-icon {
+								width: 24px;
+								height: 24px;
+								margin: 0 auto;
+								/* margin: 0 auto 12px; */
+								background: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/en-summer-camp-country-flag.png') no-repeat;
+
+								&.all { background-position: 0 0; }
+								&.gb { background-position: -30px 0; }
+								&.us { background-position: -60px 0; }
+								&.ca { background-position: -90px 0; }
+								&.de { background-position: -120px 0; }
+								&.ch { background-position: -150px 0; }
+							}
+
+							&.country-name {
+								text-transform: uppercase;
+								font-size: 9px;
+								padding: 8px 0;
+								hyphens: auto;
+
+								@mixin sm-min {
+									font-size: 11px;
+								}
+								@mixin md-min {
+									padding: 10px 0;
+									font-size: 12px;
+								}
+								@mixin lg-min {
+									padding: 12px 0;
+									font-size: 13px;
+								}
+							}
+						}
+
+
+						/* CAMP LOCATIONS FILTER ––––––––––––––––––––––––––––– */
+						.filters {
+							text-align: center;
+							margin-bottom: 2rem;
+							justify-content: center;
+							padding: 0;
+							border-bottom: 4px solid #DDDDDD;
+
+							* {
+								display: inline-block;
+							}
+
+							li.flex-item {
+								position: relative;
+								align-items: stretch;
+								margin: 0 1px;
+								padding: 0;
+								flex: 0 0 16.66666666%;
+								max-width: 72px;
+
+								@mixin sm-min {
+									max-width: 108px;
+								}
+								@mixin md-min {
+									max-width: 120px;
+								}
+								@mixin lg-min {
+									max-width: 136px;
+								}
+							}
+
+							label {
+								position: static;
+								display: block;
+								width: 100%;
+								height: 100%;
+								margin: 0;
+								padding: 2px;
+								
+								line-height: 1;
+								cursor: pointer;
+								transition: all 0.1s;
+
+								&:after {
+									content: "";
+									position: absolute;
+									width: 100%;
+									height: 6px;
+									left: 0;
+									bottom: -4px;
+									background-color: transparent;
+									transition: all 0.3s;
+								}
+
+								@mixin md-min {
+									/* min-width: 120px; */
+								}
+
+								span {
+									display: block;
+								}
+							}
+						}
+
+						/* CAMP LOCATIONS ––––––––––––––––––––––––––––– */
+						.flex-container {
+							justify-content: center;
+
+							&.posts {
+								.flex-item.post {
+									display: flex;
+									flex: 0 0 100%;
+									max-width: 100%;
+									padding-top: 0;
+
+									animation: fadeIn 0.5s ease-out;
+									transition: all 0.3s ease;
+
+									@mixin sm-min {
+										flex: 0 0 50%;
+										max-width: 50%;
+										padding-top: 15px;
+									}
+									@mixin md-min {
+										flex: 0 0 33.33333333%;
+										max-width: 33.33333333%;
+									}
+
+									.item-inner {
+										width: 100%;
+										display: block;
+
+										a.item-location {
+											position: relative;
+											display: block;
+											width: 100%;
+											height: 100%;
+											min-height: 120px;
+											padding: 16px;
+											padding-bottom: 46px;
+											background-color: #FFF;
+											color: #404040;
+											text-decoration: none;
+											box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+
+											span {
+												display: block;
+												transition: all 0.2s ease;
+
+												&.loca-title-image {
+													position: relative;
+													overflow: hidden;
+													padding-top: 38%;
+													margin: -16px -16px 16px -16px;
+
+													@mixin md-min {
+														padding-top: 64%;
+														margin: -20px -20px 20px -20px;
+													}
+													@mixin lg-min {
+														padding-top: 58%;
+													}
+
+													.school-image {
+														position: absolute;
+														width: 100%;
+														height: 100%;
+														top: 0;
+														left: 0;
+
+														img {
+															display: block;
+															width: 100%;
+															height: auto;
+															position: absolute;
+															left: 50%;
+															top: 50%;
+															transform: translateY(-50%) translateX(-50%);
+														}
+													}
+													
+
+													.school-name {
+														position: absolute;
+														left: 0;
+														bottom: 0;
+														padding: 12px 15px 0;
+														background-color: #FFFFFF;
+														color: #202020;
+														font-weight: 700;
+														font-size: 16px;
+														transition: all 0.2s ease;
+
+														span {
+															float: left;
+															margin-right: 6px;
+														}
+													}
+												}
+
+												&.loca-ages, 
+												&.loca-dates,
+												&.loca-desc,
+												&.learn-more {
+													font-size: 13px;
+
+													@mixin lg-min {
+														font-size: 14px;
+													}
+												}
+
+												&.loca-ages, 
+												&.loca-dates {
+													color: #503F8B;
+													padding-bottom: 5px;
+
+													&:before {
+														display: inline-block;
+														font-family: 'kie';
+														font-size: 16px;
+														width: 16px;
+														height: 16px;
+														line-height: 16px;
+														margin-right: 6px;
+														vertical-align: -2px;
+													}
+												}
+												&.loca-ages:before {
+													content: "\e979";
+												}
+												&.loca-dates:before {
+													content: "\e976";
+												}
+
+												&.learn-more {
+													position: absolute;
+													bottom: 0;
+													right: 16px;
+													text-transform: uppercase;
+													font-weight: 700;
+													color: #00A4D9;
+													padding: 10px 4px 6px;
+													border-bottom: 4px solid #00A4D9;
+													background-color: transparent;
+													font-size: 13px;
+													text-align: center;
+												}
+											}
+
+											@mixin md-min {
+
+												padding: 20px;
+												padding-bottom: 46px;
+
+												&:hover {
+													box-shadow: 0px 40px 40px -32px rgba(0,0,0,.32);
+
+													.loca-title-image {
+														.school-image {
+															transform: scale(1.25);
+															transition: transform 4s ease-out;
+														}
+														.school-name {
+															
+														}
+													}
+													.learn-more {
+														color: #FFFFFF;
+														background-color: #00A4D9;
+														padding-left: 30px;
+														padding-right: 30px;
+														right: 0;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						/* FILTERING RULES ––––––––––––––––––––––––––––– */
+						
+						[value="All-Location"]:checked ~ .filters [for="All-Location"],
+						[value="UK-Location"]:checked ~ .filters [for="UK-Location"],
+						[value="US-Location"]:checked ~ .filters [for="US-Location"],
+						[value="CA-Location"]:checked ~ .filters [for="CA-Location"],
+						[value="DE-Location"]:checked ~ .filters [for="DE-Location"],
+						[value="CH-Location"]:checked ~ .filters [for="CH-Location"] {
+							&:after {
+								background-color: #503F8B;
+							}
+
+							.country-name {
+								color: #240F6E;
+							}
+						}
+
+						[value="All-Location"]:not(:checked) ~ .filters [for="All-Location"],
+						[value="UK-Location"]:not(:checked) ~ .filters [for="UK-Location"],
+						[value="US-Location"]:not(:checked) ~ .filters [for="US-Location"],
+						[value="CA-Location"]:not(:checked) ~ .filters [for="CA-Location"],
+						[value="DE-Location"]:not(:checked) ~ .filters [for="DE-Location"],
+						[value="CH-Location"]:not(:checked) ~ .filters [for="CH-Location"] {
+							opacity: 0.68;
+							filter: grayscale(80%);
+
+							@mixin md-min {
+								&:hover {
+									filter: grayscale(25%);
+
+									&:after {
+										content: "";
+										position: absolute;
+										width: 100%;
+										height: 6px;
+										left: 0;
+										bottom: -4px;
+										background-color: #503F8B;
+									}
+								}
+							}
+						}
+
+						[value="All-Location"]:checked ~ .posts [data-category] {
+							display: flex;
+						}
+
+						[value="UK-Location"]:checked ~ .posts .post:not([data-category~="UK-Location"]),
+						[value="US-Location"]:checked ~ .posts .post:not([data-category~="US-Location"]),
+						[value="CA-Location"]:checked ~ .posts .post:not([data-category~="CA-Location"]),
+						[value="DE-Location"]:checked ~ .posts .post:not([data-category~="DE-Location"]),
+						[value="CH-Location"]:checked ~ .posts .post:not([data-category~="CH-Location"]) {
+							opacity: 0.3;
+							/* width: 0;
+							height: 0;
+							transform: scale(0); */
+
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+

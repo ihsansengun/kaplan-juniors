@@ -1,0 +1,598 @@
+.field-item {
+	.section-content {
+		&.section--group-program-steps {
+			background-color: #F4F4F4;
+
+			.section-inner {
+				.section-head {
+					text-align: center;
+					padding-bottom: 10px;
+
+					h2.title {
+						color: #202020;
+						font-weight: 700;
+						text-transform: uppercase;
+						text-align: center;
+						margin-bottom: 0.5em;
+						font-size: 22px;
+						@mixin sm-min { font-size: 26px; }
+						@mixin md-min { font-size: 28px; }
+						@mixin lg-min { font-size: 32px; }
+
+						.m-title {
+							display: block;
+							text-align: left;
+						}
+					}
+
+					.desc {
+						max-width: 920px;
+						margin-left: auto;
+						margin-right: auto;
+						color: #404040;
+						font-size: 14px;
+						@mixin sm-min { font-size: 16px; }
+						@mixin md-min { font-size: 18px; }
+					}
+				}
+				.section-body {
+					.carousel {
+						margin-bottom: 2.5em;
+
+						&.steps-wrapper {
+							.carousel-indicators {
+								position: static;
+								width: 100%;
+								margin: 0;
+								left: none;
+								padding-bottom: 20px;
+
+								@mixin sm-min {
+									padding-bottom: 0;
+								}
+
+								a.flex-item {
+									position: relative;
+									border-radius: 0;
+									border: none;
+									margin: 0;
+									padding: 4px;									
+									width: auto;
+									height: auto;
+									background-color: transparent;
+									cursor: pointer;
+									text-indent: 0;
+									text-align: left;
+									text-decoration: none;
+
+									@mixin sm-min {
+										flex: 0 0 20%;
+										max-width: 20%;
+										padding: 10px 10px 30px 10px;
+										text-align: center;
+
+										&:before {
+											content: "● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ";
+											overflow: hidden;
+											position: absolute;
+											display: block;
+											width: calc(100% - 50px);
+											height: 12px;
+											line-height: 12px;
+											letter-spacing: 1;
+											color: #CCCCCC;
+											left: calc(-100% + 50px);
+											transform: translateX(50%);
+											z-index: 0;
+
+											@mixin sm-min {
+												top: calc(10px + 32px/2 - 6px);
+											}
+											@mixin md-min {
+												top: calc(10px + 42px/2 - 6px);
+											}
+										}
+
+										&:first-child {
+											&:before {
+												content: none;
+											}
+										}
+									}
+									@mixin md-min {
+										&:hover {
+											&:not(.active) {
+												span.no {
+													background-color: #503F8B;
+												}
+												span.icon {
+													transform: scale(1.1);
+													filter: hue-rotate(200deg) brightness(50%);
+													/* background-color: #503F8B; */
+												}
+												span.step-desc {
+													color: #503F8B;
+												}
+											}
+										}
+									}
+
+									span {
+										display: inline-block;
+										transition: all 0.25s ease;
+
+										@mixin sm-min {
+											display: block;
+										}
+									}
+									.no {
+										position: relative;
+										width: 30px;
+										height: 30px;
+										line-height: 30px;
+										border-radius: 50%;
+										color: #FFFFFF;
+										margin: 0 auto;
+										font-size: 12px;
+										font-weight: 700;
+										text-align: center;
+										background-color: #C18A24;
+										transform: scale(1);
+										z-index: 2;
+
+										@mixin sm-min {
+											width: 32px;
+											height: 32px;
+											line-height: 32px;
+											font-size: 15px;
+										}
+										@mixin md-min {
+											width: 42px;
+											height: 42px;
+											line-height: 42px;
+											font-size: 18px;
+										}
+									}
+									.icon {
+										display: none;
+										/* background-color: #C18A24; */
+
+										/* &.icon-step1 {
+											mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-step1.svg') no-repeat center;
+										}
+										&.icon-step2 {
+											mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-step2.svg') no-repeat center;
+										}
+										&.icon-step3 {
+											mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-step3.svg') no-repeat center;
+										}
+										&.icon-step4 {
+											mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-step4.svg') no-repeat center;
+										}
+										&.icon-step5 {
+											mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-step5.svg') no-repeat center;
+										} */
+
+										@mixin sm-min {
+											display: block;
+											width: 56px;
+											height: 56px;
+											margin: 20px auto 10px;
+										}
+										@mixin md-min {
+											display: block;
+											width: 80px;
+											height: 80px;
+											margin: 24px auto 12px;
+										}
+									}
+									.step-desc {
+										font-size: 13px;
+										text-transform: uppercase;
+										font-weight: 600;
+										line-height: 1.2;
+										color: #909090;
+
+										@mixin sm-min {
+											font-size: 12px;
+										}
+										@mixin md-min {
+											font-size: 13px;
+										}
+										@mixin lg-min {
+											font-size: 14px;
+										}
+									}
+
+									&.active {
+										/* background-color: #D3CFE2; */
+
+										.no {											
+											color: #FFC82E;
+											background: rgb(124,111,168);
+											background: linear-gradient(135deg, rgba(124,111,168,1) 0%, rgba(36,15,110,1) 100%);
+											@mixin sm-min {
+												transform: scale(1.2);
+											}
+										}
+										.icon {
+											filter: hue-rotate(200deg) brightness(50%);
+										}
+										.step-desc {
+											color: #240F6E;
+										}
+										&:after {
+											@mixin sm-min {
+												content: "";
+												position: absolute;
+												z-index: 1;
+												width: 0;
+												height: 0;
+												left: calc(50% - 30px);
+												bottom: -30px;
+												border-style: solid;
+												border-width: 30px 30px 0 30px;
+												border-color: #EEEEEE transparent transparent transparent;
+											}
+											@mixin md-min {
+												left: calc(50% - 40px);
+												bottom: -40px;
+												border-width: 40px 40px 0 40px;
+											}
+										}
+									}
+								}
+							}
+
+							.step-content {
+								width: auto;								
+								border-radius: 8px;
+								background-color: #FFFFFF;
+								background-image: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/group-program-carousel-bg.png');
+								
+								background-position: right bottom;
+								background-size: 150% auto;
+								background-repeat: no-repeat;
+								box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+
+								padding-bottom: 60px;
+
+								@mixin sm-min {
+									padding-bottom: 40px;
+									background-size: 120% auto;
+									/* min-height: 560px; */
+								}
+								@mixin md-min {
+									padding: 0;
+									min-height: 640px;
+									background-size: 100% auto;
+								}
+								@mixin lg-min {
+									
+								}
+								@mixin xl-min {
+									margin: 0 -80px;
+								}
+
+
+								.item {
+									.item-content {
+										display: flex;
+										justify-content: center;
+										flex-direction: column;
+
+										@mixin sm-min {
+											/* min-height: 560px; */
+										}
+
+										@mixin md-min {
+											min-height: 640px;
+										}
+
+										.container {
+											padding: 20px;
+											width: 100%;
+
+											@mixin sm-min {
+												padding: 46px 20px;
+											}
+											@mixin md-min {
+												padding: 50px 50px;
+											}
+											@mixin lg-min {
+												max-width: 1140px;
+											}
+										}
+										
+										.carousel-head {
+											h2.title {
+												color: #240F6E;
+												font-weight: 700;
+												text-transform: uppercase;
+												font-size: 16px;
+
+												@mixin sm-min {
+													font-size: 20px;
+													margin-bottom: 4px;
+												}
+
+												@mixin md-min {
+													font-size: 24px;
+													margin-bottom: 4px;
+												}
+											}
+											.no {
+												position: relative;
+												display: inline-block;
+												width: 30px;
+												height: 30px;
+												line-height: 30px;
+												border-radius: 50%;
+												color: #FFFFFF;
+												margin: 0 5px 0 0;
+												font-size: 12px;
+												font-weight: 700;
+												text-align: center;
+												background-color: #240F6E;
+												transform: scale(1);
+												z-index: 2;
+
+												@mixin sm-min {
+													width: 36px;
+													height: 36px;
+													line-height: 36px;
+													font-size: 18px;
+												}
+
+												@mixin md-min {
+													width: 42px;
+													height: 42px;
+													line-height: 42px;
+													font-size: 18px;
+												}
+
+												.no-sub {
+													font-size: 13px;
+													&:before {
+														content: '-';
+														margin-left: -3px;
+													}
+												}
+											}
+										}
+										.item-divider {
+											padding: 8px 0;
+										}
+										.flex-container {
+											justify-content: flex-start;
+											
+											&.grid {
+												@mixin sm-min {
+													margin-left: -8px;
+													margin-right: -8px;
+												}
+												@mixin md-min {
+													margin-left: -10px;
+													margin-right: -10px;
+												}
+												@mixin md-min {
+													margin-left: -15px;
+													margin-right: -15px;
+												}
+											}
+
+
+											.flex-item {
+												display: flex;
+												padding-top: 0;
+												padding-bottom: 10px;
+
+												@mixin sm-min {
+													flex: 0 0 33.33333333%;
+													max-width: 33.33333333%;
+													padding: 8px;
+												}
+
+												@mixin md-min {
+													padding: 10px;
+												}
+
+												@mixin lg-min {
+													padding: 15px;
+												}
+
+
+												.item-inner {
+													padding: 15px;
+													width: 100%;
+													background-color: rgba(222,222,222,0.5);
+
+													@mixin sm-min {
+														padding: 18px;
+													}
+
+													@mixin md-min {
+														padding: 20px;
+														min-height: 128px;
+													}
+													@mixin lg-min {
+														padding: 28px;
+														min-height: 140px;
+													}
+
+													h3.title {
+														font-size: 14px;
+														margin-bottom: 5px;
+														font-weight: 700;
+														text-transform: uppercase;
+														color: #240F6E;
+
+														@mixin sm-min {
+															font-size: 14px;
+															margin-bottom: 6px;
+														}
+														@mixin md-min {
+															font-size: 15px;
+															margin-bottom: 8px;
+														}
+														@mixin lg-min {
+															font-size: 16px;
+															margin-bottom: 10px;
+														}
+													}
+
+													p.desc {
+														font-size: 13px;
+
+														@mixin md-min {
+															font-size: 14px;
+														}
+													}
+
+													.icon {
+														display: none;
+														width: 100px;
+														height: 100px;
+														margin: 10px auto;
+														float: right;
+														opacity: 0.6;
+
+														@mixin sm-min {
+															display: inline-block;
+														}
+
+														/* &.icon-low-season {
+															background: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-low-season.svg') no-repeat center;
+														}
+														&.icon-high-season {
+															background: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-high-season.svg') no-repeat center;
+														}
+														&.icon-seasonal-holiday{
+															background: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-seasonal-holiday.svg') no-repeat center;
+														} */
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+
+							.carousel-control {
+								position: absolute;
+								z-index: 2;
+								width: 60px;
+								height: 60px;
+								top: auto;
+								bottom: 15px;
+								border-radius: 50%;
+								background-color: #503f8b;
+								opacity: 1;
+								filter: alpha(opacity=100);
+								border: 3px solid #FFF;
+								text-shadow: none;
+
+								&.left {
+									left: 50%;
+									margin-left: -60px;
+
+									.icon {
+										&:after {
+											content: "PREV";
+										}
+									}
+								}
+								&.right {
+									right: 50%;
+									margin-right: -60px;
+
+									.icon {
+										&:after {
+											content: "NEXT";
+										}
+									}
+								}
+
+								&.inactive {
+									background-color: #D3CFE2;
+									cursor: default;
+									span {
+										opacity: 0;
+									}
+								}
+
+								.icon {
+									font-size: 16px;
+									width: 100%;
+									text-align: center;
+									margin: 0;
+									top: 0;
+									left: 0;
+									bottom: 0;
+									right: 0;
+									display: flex;
+									justify-content: center;
+									flex-direction: column;
+
+									&:after {
+										display: block;
+										padding-top: 5px;
+										margin-bottom: -5px;
+										font-weight: 700;
+										font-size: 10px;
+										opacity: 0.75;
+									}
+								}
+
+								@mixin sm-min {
+									bottom: 22px;
+								}
+
+								@mixin md-min {
+									width: 60px;
+									height: 60px;
+									top: auto;
+									bottom: calc(320px - 30px);
+
+									&.left {
+										left: -30px;
+										margin-left: 0;
+									}
+									&.right {
+										right: -30px;
+										margin-right: 0;
+									}
+
+									&:hover {
+										&:not(.inactive) {
+											color: #503F8B;
+											background-color: #FFFFFF;
+											border: 2px solid #503f8b;
+											box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+										}
+									}
+								}
+
+								@mixin lg-min {
+
+								}
+
+								@mixin xl-min {
+									&.left {
+										left: calc(-30px + -80px);
+										margin-left: 0;
+									}
+									&.right {
+										right: calc(-30px + -80px);
+										margin-right: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

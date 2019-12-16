@@ -44,12 +44,17 @@
     h1 {
       font-size: 28px;
 
-
+      @mixin atSmall {
+        font-size: 36px;
+      }
       @mixin atMedium {
         margin-top: 0;
 
-        font-size: 62px;
+        font-size: 52px;
         margin-bottom: 15px;
+      }
+      @mixin atLarge {
+        font-size: 62px;
       }
     }
 

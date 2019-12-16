@@ -1,0 +1,111 @@
+.field-item {
+	.section-content {
+		&.section--group-program-why-choose {
+			background-color: #503F8B;
+
+			.section-inner {
+				.section-head {
+					padding-bottom: 2em;
+
+					h2.title {
+						color: #FFFFFF;
+					}
+					.desc { }
+				}
+				.section-body {
+					.flex-container {
+						justify-content: center;
+						
+						.flex-item {
+							padding: 0 15px 15px 15px;
+							-ms-flex: 0 0 100%;
+							-webkit-box-flex: 0;
+							flex: 0 0 100%;
+							max-width: 100%;
+
+							@mixin sm-min {
+								-ms-flex-preferred-size: 0;
+								flex-basis: 0;
+								-ms-flex-positive: 1;
+								flex-grow: 1;
+								flex: 0 0 25%;
+								max-width: 25%;
+							}
+
+							.item-inner {
+								height: 100%;
+								margin: 0.25em 0;
+
+								@mixin sm-min {
+									padding: 0 5% 20px 5%;
+									margin: 0;
+								}
+								
+								.icon {
+									float: left;
+									margin-right: 10px;
+									display: block;
+									width: 60px;
+									height: 60px;
+									/* background-color: #FFC82E; */
+									/* margin: 20px auto 10px; */
+
+
+									/* &.icon-why-choose1 {
+										mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-why1.svg') no-repeat center;
+									}
+									&.icon-why-choose2 {
+										mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-why2.svg') no-repeat center;
+									}
+									&.icon-why-choose3 {
+										mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-why3.svg') no-repeat center;
+									}
+									&.icon-why-choose4 {
+										mask: url('//assetlibs.kaplaninternational.com/_assets/language-hub/assets/images/icon-group-program-why4.svg') no-repeat center;
+									} */
+
+
+									@mixin sm-min {
+										float: none;
+										margin-bottom: 0.75em;
+										width: 68px;
+									}
+									@mixin md-min {
+										width: 86px;
+										height: 86px;
+									}
+
+								}
+								.title {
+									color: #FFC82E;
+									text-transform: uppercase;
+									font-size: 14px;
+									font-weight: 700;
+									margin-bottom: 0.25em;
+									overflow: hidden;
+									@mixin sm-min {
+										/* font-size: 15px; */
+									}
+									@mixin md-min {
+										font-size: 16px;
+									}
+								}
+								.desc {
+									overflow: hidden;
+									font-size: 12px;
+									color: rgba(255,255,255,0.75);
+									@mixin sm-min {
+										font-size: 13px;
+									}
+									@mixin md-min {
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

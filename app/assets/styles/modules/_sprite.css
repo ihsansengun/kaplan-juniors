@@ -14,67 +14,67 @@ Instead edit gulp/templates/sprite */
 ._icon--0730 {
   width: 93px;
   height: 93px;
-  background-position: 99.77864583333333% 50.95890410958904%/*rtl:ignore*/;
+  background-position: 77.5% 81.6426592797784%/*rtl:ignore*/;
 }
 
 ._icon--0830 {
   width: 93px;
   height: 93px;
-  background-position: 48.4375% 80.74794520547945%/*rtl:ignore*/;
+  background-position: 99.91874999999999% 25.761772853185594%/*rtl:ignore*/;
 }
 
 ._icon--1100 {
   width: 93px;
   height: 93px;
-  background-position: 99.77864583333333% 25.47945205479452%/*rtl:ignore*/;
+  background-position: 99.91874999999999% 0/*rtl:ignore*/;
 }
 
 ._icon--1145 {
   width: 93px;
   height: 93px;
-  background-position: 0 80.74794520547945%/*rtl:ignore*/;
+  background-position: 79.50208333333332% 49.66759002770083%/*rtl:ignore*/;
 }
 
 ._icon--1230 {
   width: 93px;
   height: 93px;
-  background-position: 72.65625% 80.74794520547945%/*rtl:ignore*/;
+  background-position: 0 81.6426592797784%/*rtl:ignore*/;
 }
 
 ._icon--1400 {
   width: 93px;
   height: 93px;
-  background-position: 96.875% 80.74794520547945%/*rtl:ignore*/;
+  background-position: 19.375% 81.6426592797784%/*rtl:ignore*/;
 }
 
 ._icon--1730 {
   width: 93px;
   height: 93px;
-  background-position: 99.77864583333333% 0/*rtl:ignore*/;
+  background-position: 38.75% 81.6426592797784%/*rtl:ignore*/;
 }
 
 ._icon--2000 {
   width: 93px;
   height: 93px;
-  background-position: 24.21875% 80.74794520547945%/*rtl:ignore*/;
+  background-position: 58.125% 81.6426592797784%/*rtl:ignore*/;
 }
 
 ._icon--accom {
   width: 100.52px;
   height: 89px;
-  background-position: 0 55.75338753387534%/*rtl:ignore*/;
+  background-position: 0 56.364383561643834%/*rtl:ignore*/;
 }
 
 ._icon--bigben {
   width: 92.01px;
   height: 102px;
-  background-position: 75.62274344788176% 0/*rtl:ignore*/;
+  background-position: 39.32306284953949% 0/*rtl:ignore*/;
 }
 
 ._icon--booking {
   width: 17px;
   height: 17px;
-  background-position: 78.58695652173913% 50.50566893424036%/*rtl:ignore*/;
+  background-position: 68.63489208633092% 62.31121281464531%/*rtl:ignore*/;
 }
 
 ._icon--bus {
@@ -86,137 +86,143 @@ Instead edit gulp/templates/sprite */
 ._icon--check {
   width: 16px;
   height: 14px;
-  background-position: 83.11279826464208% 62.83783783783784%/*rtl:ignore*/;
+  background-position: 74.6157989228007% 61.88636363636363%/*rtl:ignore*/;
 }
 
 ._icon--check-blue {
   width: 38px;
   height: 29.89px;
-  background-position: 76.50569476082005% 90.56784471280746%/*rtl:ignore*/;
+  background-position: 37.49906542056075% 40.96342929900261%/*rtl:ignore*/;
 }
 
 ._icon--date {
   width: 17px;
   height: 16px;
-  background-position: 78.58695652173913% 54.237556561085974%/*rtl:ignore*/;
+  background-position: 71.69244604316546% 62.1689497716895%/*rtl:ignore*/;
 }
 
 ._icon--dedic {
   width: 87.7px;
   height: 89px;
-  background-position: 50.940148985358334% 55.75338753387534%/*rtl:ignore*/;
+  background-position: 98.82752936328043% 50.95890410958904%/*rtl:ignore*/;
 }
 
 ._icon--eng {
   width: 92.01px;
   height: 102px;
-  background-position: 26.09418426452635% 29.1376404494382%/*rtl:ignore*/;
+  background-position: 58.452358676895564% 28.977272727272727%/*rtl:ignore*/;
 }
 
 ._icon--engmin {
   width: 63.21px;
   height: 70px;
-  background-position: 16.663041639478962% 99.93041237113403%/*rtl:ignore*/;
+  background-position: 19.717923066360658% 53.575520833333336%/*rtl:ignore*/;
+}
+
+._icon--excu-acti {
+  width: 98px;
+  height: 90.3px;
+  background-position: 80.33894736842103% 0/*rtl:ignore*/;
 }
 
 ._icon--excur {
   width: 84.54px;
   height: 89px;
-  background-position: 74.18335626560669% 27.642276422764226%/*rtl:ignore*/;
+  background-position: 98.18818326986856% 75.34246575342466%/*rtl:ignore*/;
 }
 
 ._icon--fr {
   width: 100.46px;
   height: 102px;
-  background-position: 0 29.1376404494382%/*rtl:ignore*/;
+  background-position: 59.49760866804925% 0/*rtl:ignore*/;
 }
 
 ._icon--frmin {
   width: 68.95px;
   height: 70px;
-  background-position: 0 99.93041237113403%/*rtl:ignore*/;
+  background-position: 32.4828886023212% 53.575520833333336%/*rtl:ignore*/;
 }
 
 ._icon--ger {
   width: 102px;
   height: 102px;
-  background-position: 50.437333333333335% 0/*rtl:ignore*/;
+  background-position: 20.93842887473461% 29.46875%/*rtl:ignore*/;
 }
 
 ._icon--germin {
   width: 75.49px;
   height: 70px;
-  background-position: 71.23359318572389% 53.02319587628866%/*rtl:ignore*/;
+  background-position: 40.3248175916062% 27.013020833333332%/*rtl:ignore*/;
 }
 
 ._icon--kaplan-logo {
   width: 184px;
   height: 32px;
-  background-position: 0 16.838028169014084%/*rtl:ignore*/;
+  background-position: 0 16.997630331753555%/*rtl:ignore*/;
 }
 
 ._icon--left-arrow {
   width: 32px;
   height: 32px;
-  background-position: 75.47415730337079% 98.03286384976526%/*rtl:ignore*/;
+  background-position: 12.199630314232902% 91.87914691943128%/*rtl:ignore*/;
 }
 
 ._icon--location {
   width: 17px;
   height: 17px;
-  background-position: 78.58695652173913% 46.65079365079365%/*rtl:ignore*/;
+  background-position: 98.13129496402877% 83.29519450800915%/*rtl:ignore*/;
 }
 
 ._icon--mail {
   width: 22px;
   height: 22px;
-  background-position: 91.83736263736263% 88.9288990825688%/*rtl:ignore*/;
+  background-position: 95.02903811252267% 84.25925925925925%/*rtl:ignore*/;
 }
 
 ._icon--mail2 {
   width: 22px;
   height: 22px;
-  background-position: 87.0021978021978% 88.9288990825688%/*rtl:ignore*/;
+  background-position: 87.04355716878402% 84.25925925925925%/*rtl:ignore*/;
 }
 
 ._icon--phone {
   width: 22px;
   height: 22px;
-  background-position: 82.16703296703297% 88.9288990825688%/*rtl:ignore*/;
+  background-position: 91.03629764065334% 84.25925925925925%/*rtl:ignore*/;
 }
 
 ._icon--proj {
   width: 97.79px;
   height: 89px;
-  background-position: 26.50773977479497% 55.75338753387534%/*rtl:ignore*/;
+  background-position: 80.30344479282842% 24.73972602739726%/*rtl:ignore*/;
 }
 
 ._icon--right-arrow {
   width: 32px;
   height: 32px;
-  background-position: 82.66516853932585% 98.03286384976526%/*rtl:ignore*/;
+  background-position: 18.11460258780037% 91.87914691943128%/*rtl:ignore*/;
 }
 
 ._icon--sp {
   width: 98.62px;
   height: 102px;
-  background-position: 50.86685342777103% 29.1376404494382%/*rtl:ignore*/;
+  background-position: 0 29.46875%/*rtl:ignore*/;
 }
 
 ._icon--spmin {
   width: 67.7px;
   height: 70px;
-  background-position: 32.28927437087711% 99.93041237113403%/*rtl:ignore*/;
+  background-position: 59.90104888185236% 53.575520833333336%/*rtl:ignore*/;
 }
 
 ._icon--sun {
   width: 70px;
   height: 70px;
-  background-position: 49.105651105651106% 99.93041237113403%/*rtl:ignore*/;
+  background-position: 46.25844930417495% 53.575520833333336%/*rtl:ignore*/;
 }
 
 ._icon--zzz {
   width: 66px;
   height: 66px;
-  background-position: 65.65936739659368% 98.91071428571429%/*rtl:ignore*/;
+  background-position: 0 99.93041237113403%/*rtl:ignore*/;
 }
